@@ -97,10 +97,7 @@ sources:
     - { subdomain: "wd5", host: "nvidia", path: "NVIDIAExternalCareerSite", company: "NVIDIA" }
 
   smartrec_companies:
-    - "celonis"
-    - "bumble"
-    - "qualtrics"
-    - "clari"
+    - "Qualtrics"
 
 notify:
   telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"
