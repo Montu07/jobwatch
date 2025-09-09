@@ -2,8 +2,8 @@ name: JobWatch
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
-  workflow_dispatch:
+    - cron: "*/15 * * * *"   # every 15 minutes
+  workflow_dispatch:         # allow manual run from the Actions tab
 
 permissions:
   contents: read
@@ -11,6 +11,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,7 +29,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # --- sanity check: send a simple Telegram message using the secrets ---
+      # --- Sanity check: test Telegram secrets and strip whitespace ---
       - name: Telegram ping (secrets sanity check)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -36,23 +37,31 @@ jobs:
         run: |
           python - <<'PY'
           import os, requests
-          bot = os.environ.get("TELEGRAM_BOT_TOKEN")
-          chat = os.environ.get("TELEGRAM_CHAT_ID")
+          bot = (os.environ.get("TELEGRAM_BOT_TOKEN") or "")
+          chat = (os.environ.get("TELEGRAM_CHAT_ID") or "")
+          print("BOT len(before strip):", len(bot), "CHAT len(before strip):", len(chat))
+          print("BOT has newline:", "\\n" in bot or "\\r" in bot)
+          bot = bot.strip()
+          chat = chat.strip()
+          print("BOT len(after strip):", len(bot), "CHAT len(after strip):", len(chat))
+          print("BOT has newline after strip:", "\\n" in bot or "\\r" in bot)
           assert bot and chat, "Missing TELEGRAM_* secrets"
-          r = requests.post(f"https://api.telegram.org/bot{bot}/sendMessage",
-                            json={"chat_id": chat, "text": "✅ GitHub Actions can send messages"})
+          r = requests.post(
+              f"https://api.telegram.org/bot{bot}/sendMessage",
+              json={"chat_id": chat, "text": "✅ GitHub Actions can send messages"}
+          )
           print("Status:", r.status_code, r.text)
           r.raise_for_status()
           PY
 
-      # --- run your app ---
+      # --- Run your main JobWatch script ---
       - name: Run JobWatch
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
 
-      # Save DB so we don't alert duplicates next run
+      # --- Save DB as artifact to avoid duplicate alerts ---
       - name: Upload DB artifact
         uses: actions/upload-artifact@v4
         with:
@@ -60,4 +69,3 @@ jobs:
           path: state/jobs.db
           retention-days: 30
           overwrite: true
-
