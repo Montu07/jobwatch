@@ -1,3 +1,5 @@
+# main.py (your style + Ashby/Workday added)
+
 import os
 import yaml
 from datetime import datetime
@@ -5,23 +7,29 @@ from dotenv import load_dotenv
 
 from db import get_conn, insert_if_new
 from utils.filters import match_job
+
+# sources
 from sources.greenhouse import fetch_greenhouse
 from sources.lever import fetch_lever
-from notify.telegram import send_telegram
+from sources.ashby import fetch_ashby
+from sources.workday import fetch_workday
 
+# notify
+from notify.telegram import send_telegram
 
 TELEGRAM_MAX = 3800  # keep under Telegram's ~4096 message limit with some buffer
 
 
 def load_config():
     with open("config.yml", "r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        return yaml.safe_load(f) or {}
 
 
 def source_fetchers(cfg):
-    """Yield (source_key, org, jobs_list_or_exception)."""
+    """Yield (source_key, org_label, jobs_list_or_exception)."""
+
     # Greenhouse
-    for org in cfg.get("sources", {}).get("greenhouse_orgs", []):
+    for org in (cfg.get("sources", {}) or {}).get("greenhouse_orgs", []) or []:
         try:
             jobs = fetch_greenhouse(org)
             yield ("greenhouse", org, jobs, None)
@@ -29,12 +37,30 @@ def source_fetchers(cfg):
             yield ("greenhouse", org, [], e)
 
     # Lever
-    for org in cfg.get("sources", {}).get("lever_orgs", []):
+    for org in (cfg.get("sources", {}) or {}).get("lever_orgs", []) or []:
         try:
             jobs = fetch_lever(org)
             yield ("lever", org, jobs, None)
         except Exception as e:
             yield ("lever", org, [], e)
+
+    # Ashby
+    for org in (cfg.get("sources", {}) or {}).get("ashby_orgs", []) or []:
+        try:
+            jobs = fetch_ashby(org)
+            yield ("ashby", org, jobs, None)
+        except Exception as e:
+            yield ("ashby", org, [], e)
+
+    # Workday
+    for tenant in (cfg.get("sources", {}) or {}).get("workday_tenants", []) or []:
+        try:
+            jobs = fetch_workday(tenant)
+            label = tenant.get("company") or tenant.get("tenant") or "workday"
+            yield ("workday", label, jobs, None)
+        except Exception as e:
+            label = tenant.get("company") or tenant.get("tenant") or "workday"
+            yield ("workday", label, [], e)
 
 
 def format_job_line(j):
@@ -47,6 +73,8 @@ def format_job_line(j):
 
 def chunk_and_send(bot, chat, header, lines):
     """Send one compact summary; if too long, send in chunks."""
+    bot = (bot or "").strip()
+    chat = (str(chat) or "").strip()
     if not bot or not chat:
         return
 
@@ -59,16 +87,20 @@ def chunk_and_send(bot, chat, header, lines):
 
     # Split into multiple messages respecting limit
     send_telegram(bot, chat, header)
-    buf = []
-    cur = 0
+    buf, cur = [], 0
     for line in lines:
-        if cur + len(line) + 1 > TELEGRAM_MAX:
+        needed = len(line) + (1 if buf else 0)
+        if cur + needed > TELEGRAM_MAX:
             send_telegram(bot, chat, "\n".join(buf))
             buf = [line]
-            cur = len(line) + 1
+            cur = len(line)
         else:
-            buf.append(line)
-            cur += len(line) + 1
+            if buf:
+                buf.append(line)
+                cur += len(line) + 1
+            else:
+                buf = [line]
+                cur = len(line)
     if buf:
         send_telegram(bot, chat, "\n".join(buf))
 
@@ -77,8 +109,12 @@ def run():
     load_dotenv()
     cfg = load_config()
 
-    bot = os.getenv("TELEGRAM_BOT_TOKEN")
-    chat = os.getenv("TELEGRAM_CHAT_ID")
+    # env first; if you prefer config.notify, you can add fallback from cfg
+    bot = os.getenv("TELEGRAM_BOT_TOKEN") or (cfg.get("notify", {}) or {}).get("telegram_bot_token")
+    chat = os.getenv("TELEGRAM_CHAT_ID") or (cfg.get("notify", {}) or {}).get("telegram_chat_id")
+
+    # if filters are nested under "filters:", use that; else use top-level keys
+    filters_cfg = cfg.get("filters") or cfg
 
     conn = get_conn()
     new_items = []
@@ -98,8 +134,12 @@ def run():
         fetched_counts[key] = len(jobs)
 
         for j in jobs:
-            if match_job(j, cfg) and insert_if_new(conn, j):
-                new_items.append(j)
+            try:
+                if match_job(j, filters_cfg) and insert_if_new(conn, j):
+                    new_items.append(j)
+            except Exception as e:
+                # never let one bad post break the run
+                print(f"[warn] filter/insert failed for {key}: {e}")
 
     # --- Build summary & send heartbeat / results ---
     ts = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")

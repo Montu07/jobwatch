@@ -74,8 +74,25 @@ sources:
     - "remotecom"
     - "brex"
     # - "notion"   # 404 on this slug right now; leave commented out
+
   lever_orgs:
     - "leverdemo"
+
+  ashby_orgs:
+    - "anthropic"
+    - "openai"
+    - "perplexityai"
+    - "ramp"
+    - "notion"
+    - "airtable"
+    - "figma"
+    - "datadog"
+    - "retool"
+
+  workday_tenants:
+    - { subdomain: "wd1", tenant: "databricks",   site: "External",                 company: "Databricks" }
+    - { subdomain: "wd5", tenant: "snowflakeinc", site: "External",                 company: "Snowflake" }
+    - { subdomain: "wd5", tenant: "nvidia",       site: "NVIDIAExternalCareerSite", company: "NVIDIA" }
 
 notify:
   telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"
