@@ -1,0 +1,7 @@
+requests>=2.32.0
+PyYAML>=6.0.1
+python-dotenv>=1.0.1
+# Below are for later days but safe to install now:
+PyMuPDF>=1.24.9
+beautifulsoup4>=4.12.3
+lxml>=5.2.2

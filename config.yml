@@ -1,0 +1,83 @@
+# ===== JobWatch Config (US-only, 7 days, sponsorship-aware) =====
+keywords_any:
+  - "data engineer"
+  - "data engineering"
+  - "analytics engineer"
+  - "data analyst"
+  - "data scientist"
+  - "machine learning engineer"
+  - "ml engineer"
+  - "mlops"
+  - "gen ai"
+  - "generative ai"
+  - "llm"
+  - "ai engineer"
+  # sponsorship signals
+  - "visa sponsorship"
+  - "h1b"
+  - "work authorization"
+  - "sponsor"
+  - "opt"
+  - "cpt"
+
+must_have_any:
+  - "python"
+  - "sql"
+
+exclude_if_title:
+  - "director"
+  - "vp"
+  - "manager"
+  - "principal"
+  - "executive assistant"
+  - "recruiter"
+  - "talent"
+  - "marketing"
+  - "sales"
+  - "hr"
+  - "design"
+  - "product marketing"
+  - "communications"
+
+# US-only (regex already checks for state abbreviations)
+locations_any:
+  - "united states"
+  - "usa"
+  - "u.s."
+  - "remote - usa"
+  - "us remote"
+
+remote_ok: true
+min_posted_days_ago: 7   # <— was 3; raise to 7 for more matches
+
+companies_priority:
+  - "databricks"
+  - "snowflake"
+  - "nvidia"
+  - "microsoft"
+  - "google"
+  - "meta"
+  - "amazon"
+  - "stripe"
+  - "openai"
+  - "anthropic"
+  - "huggingface"
+  - "scaleai"
+  - "palantir"
+  - "datadog"
+  - "uber"
+  - "lyft"
+
+sources:
+  greenhouse_orgs:
+    - "duolingo"
+    - "remotecom"
+    - "brex"
+    # - "notion"   # 404 on this slug right now; leave commented out
+  lever_orgs:
+    - "leverdemo"
+
+notify:
+  telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"
+  telegram_chat_id: "${TELEGRAM_CHAT_ID}"
+  slack_webhook_url: "${SLACK_WEBHOOK_URL}"
