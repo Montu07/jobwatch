@@ -1,5 +1,6 @@
 # ===== JobWatch Config (US-only, 7 days, sponsorship-aware) =====
 
+# ---- Matching filters ----
 keywords_any:
   - "data engineer"
   - "data engineering"
@@ -26,13 +27,10 @@ must_have_any:
   - "sql"
 
 exclude_if_title:
-  - "senior"
-  - "sr."
-  - "staff"
-  - "principal"
   - "director"
   - "vp"
   - "manager"
+  - "principal"
   - "executive assistant"
   - "recruiter"
   - "talent"
@@ -43,6 +41,7 @@ exclude_if_title:
   - "product marketing"
   - "communications"
 
+# US-only (extra safety; code already detects state abbreviations)
 locations_any:
   - "united states"
   - "usa"
@@ -50,8 +49,26 @@ locations_any:
   - "remote - usa"
   - "us remote"
 
+# Optional: reduce staffing/consultancy noise by company name substring
+company_deny_any:
+  - "solutions"
+  - "technologies"
+  - "consulting"
+  - "staffing"
+  - "talent"
+  - "tek"
+  - "hexaware"
+  - "mastech"
+  - "insight global"
+  - "ascendion"
+  - "collabera"
+  - "tata consultancy"
+  - "infosys"
+  - "wipro"
+  - "hcl"
+
 remote_ok: true
-min_posted_days_ago: 7
+min_posted_days_ago: 7   # 7-day window
 
 companies_priority:
   - "databricks"
@@ -71,34 +88,45 @@ companies_priority:
   - "uber"
   - "lyft"
 
+# ---- Sources to poll ----
 sources:
+  # Greenhouse (confirmed by your discover step)
   greenhouse_orgs:
-    - "duolingo"
-    - "remotecom"
-    - "brex"
+    - "lyft"
+    - "qualtrics"
 
-  lever_orgs:
-    - "leverdemo"
+  # SmartRecruiters (from your discover step)
+  smartrec_companies:
+    - "apple"
+    - "cisco"
+    - "expedia"
+    - "google"
+    - "ibm"
+    - "meta"
+    - "paypal"
+    - "tesla"
 
+  # Ashby (these may return 0 if the company moved ATS; safe to leave in)
   ashby_orgs:
     - "anthropic"
     - "openai"
-    - "perplexityai"
-    - "ramp"
-    - "notion"
-    - "airtable"
-    - "figma"
     - "datadog"
-    - "retool"
+    - "figma"
+    - "notion"
 
+  # Workday (explicit tenant URLs you provided/checked)
   workday_tenants:
-    - { subdomain: "wd3", host: "relx", path: "relx", company: "RELX" }
-    - { subdomain: "wd3", host: "lseg", path: "Careers", company: "LSEG" }
-    - { subdomain: "wd5", host: "nvidia", path: "NVIDIAExternalCareerSite", company: "NVIDIA" }
+    - tenant: "nvidia"
+      company: "NVIDIA"
+      url: "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
+    - tenant: "relx"
+      company: "RELX"
+      url: "https://relx.wd3.myworkdayjobs.com/en-US/relx"
+    - tenant: "lseg"
+      company: "LSEG"
+      url: "https://lseg.wd3.myworkdayjobs.com/en-US/Careers"
 
-  smartrec_companies:
-    - "Qualtrics"
-
+# ---- Notifiers (env-driven) ----
 notify:
   telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"
   telegram_chat_id: "${TELEGRAM_CHAT_ID}"
