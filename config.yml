@@ -106,7 +106,7 @@ sources:
     - "paypal"
     - "tesla"
 
-  # Ashby (these may return 0 if the company moved ATS; safe to leave in)
+  # Ashby (safe to keep; may be 0 if they moved ATS)
   ashby_orgs:
     - "anthropic"
     - "openai"
@@ -114,17 +114,20 @@ sources:
     - "figma"
     - "notion"
 
-  # Workday (explicit tenant URLs you provided/checked)
+  # Workday (split into subdomain/host/path parts)
   workday_tenants:
-    - tenant: "nvidia"
-      company: "NVIDIA"
-      url: "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
-    - tenant: "relx"
-      company: "RELX"
-      url: "https://relx.wd3.myworkdayjobs.com/en-US/relx"
-    - tenant: "lseg"
-      company: "LSEG"
-      url: "https://lseg.wd3.myworkdayjobs.com/en-US/Careers"
+    - company: "NVIDIA"
+      subdomain: "wd5"
+      host: "nvidia"
+      path: "NVIDIAExternalCareerSite"
+    - company: "RELX"
+      subdomain: "wd3"
+      host: "relx"
+      path: "relx"
+    - company: "LSEG"
+      subdomain: "wd3"
+      host: "lseg"
+      path: "Careers"
 
 # ---- Notifiers (env-driven) ----
 notify:
