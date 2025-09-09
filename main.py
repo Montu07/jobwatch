@@ -1,4 +1,4 @@
-# main.py (your style + Ashby/Workday added)
+# main.py (your style + Ashby/Workday + SmartRecruiters added)
 
 import os
 import yaml
@@ -13,6 +13,7 @@ from sources.greenhouse import fetch_greenhouse
 from sources.lever import fetch_lever
 from sources.ashby import fetch_ashby
 from sources.workday import fetch_workday
+from sources.smartrec import fetch_smartrec  # NEW
 
 # notify
 from notify.telegram import send_telegram
@@ -61,6 +62,14 @@ def source_fetchers(cfg):
         except Exception as e:
             label = tenant.get("company") or tenant.get("tenant") or "workday"
             yield ("workday", label, [], e)
+
+    # SmartRecruiters (NEW)
+    for slug in (cfg.get("sources", {}) or {}).get("smartrec_companies", []) or []:
+        try:
+            jobs = fetch_smartrec(slug)
+            yield ("smartrecruiters", slug, jobs, None)
+        except Exception as e:
+            yield ("smartrecruiters", slug, [], e)
 
 
 def format_job_line(j):
@@ -126,7 +135,7 @@ def run():
         key = f"{src}:{org}"
         if err:
             print(f"[warn] {key}: {err}")
-            errors.append(f"⚠️ {key}: {err}")
+            errors.append(f"⚠ {key}: {err}")
             fetched_counts[key] = 0
             continue
 
@@ -153,11 +162,11 @@ def run():
 
     # Per-source counts
     if fetched_counts:
-        lines.append("🗂️ Sources:")
+        lines.append("🗂 Sources:")
         for k, v in sorted(fetched_counts.items()):
             lines.append(f"  - {k}: {v}")
     else:
-        lines.append("🗂️ Sources: none")
+        lines.append("🗂 Sources: none")
 
     # New jobs list (trim to 25 to keep message short)
     if new_items:
@@ -174,7 +183,7 @@ def run():
     # Errors, if any
     if errors:
         lines.append("")
-        lines.append("⚠️ Errors:")
+        lines.append("⚠ Errors:")
         lines.extend(errors)
 
     # Console print (helps during dev)

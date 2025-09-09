@@ -26,10 +26,13 @@ must_have_any:
   - "sql"
 
 exclude_if_title:
+  - "senior"
+  - "sr."
+  - "staff"
+  - "principal"
   - "director"
   - "vp"
   - "manager"
-  - "principal"
   - "executive assistant"
   - "recruiter"
   - "talent"
@@ -40,7 +43,6 @@ exclude_if_title:
   - "product marketing"
   - "communications"
 
-# US-only (regex already checks for state abbreviations)
 locations_any:
   - "united states"
   - "usa"
@@ -49,7 +51,7 @@ locations_any:
   - "us remote"
 
 remote_ok: true
-min_posted_days_ago: 7   # raise to 7 for more matches
+min_posted_days_ago: 7
 
 companies_priority:
   - "databricks"
@@ -74,7 +76,6 @@ sources:
     - "duolingo"
     - "remotecom"
     - "brex"
-    # - "notion"   # 404 on this slug right now; leave commented out
 
   lever_orgs:
     - "leverdemo"
@@ -91,14 +92,15 @@ sources:
     - "retool"
 
   workday_tenants:
-    # RELX
     - { subdomain: "wd3", host: "relx", path: "relx", company: "RELX" }
-
-    # LSEG (London Stock Exchange Group)
     - { subdomain: "wd3", host: "lseg", path: "Careers", company: "LSEG" }
-
-    # NVIDIA
     - { subdomain: "wd5", host: "nvidia", path: "NVIDIAExternalCareerSite", company: "NVIDIA" }
+
+  smartrec_companies:
+    - "celonis"
+    - "bumble"
+    - "qualtrics"
+    - "clari"
 
 notify:
   telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"
