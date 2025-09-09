@@ -1,4 +1,5 @@
 # ===== JobWatch Config (US-only, 7 days, sponsorship-aware) =====
+
 keywords_any:
   - "data engineer"
   - "data engineering"
@@ -48,7 +49,7 @@ locations_any:
   - "us remote"
 
 remote_ok: true
-min_posted_days_ago: 7   # <— was 3; raise to 7 for more matches
+min_posted_days_ago: 7   # raise to 7 for more matches
 
 companies_priority:
   - "databricks"
@@ -90,9 +91,14 @@ sources:
     - "retool"
 
   workday_tenants:
-    - { subdomain: "wd1", tenant: "databricks",   site: "External",                 company: "Databricks" }
-    - { subdomain: "wd5", tenant: "snowflakeinc", site: "External",                 company: "Snowflake" }
-    - { subdomain: "wd5", tenant: "nvidia",       site: "NVIDIAExternalCareerSite", company: "NVIDIA" }
+    # RELX
+    - { subdomain: "wd3", host: "relx", path: "relx", company: "RELX" }
+
+    # LSEG (London Stock Exchange Group)
+    - { subdomain: "wd3", host: "lseg", path: "Careers", company: "LSEG" }
+
+    # NVIDIA
+    - { subdomain: "wd5", host: "nvidia", path: "NVIDIAExternalCareerSite", company: "NVIDIA" }
 
 notify:
   telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"

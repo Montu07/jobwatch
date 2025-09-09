@@ -1,100 +1,148 @@
 # sources/workday.py
-import requests, datetime, time
+import re, json, time, datetime
+import requests
+from bs4 import BeautifulSoup
 from utils.text import strip_html, stable_id
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (JobWatch)",
-    "Accept": "application/json, text/plain, /",
-    "Content-Type": "application/json",
-    "Accept-Language": "en-US,en;q=0.9",
-}
+UA = {"User-Agent": "Mozilla/5.0 (JobWatch)"}
 
-def _host(tenant):
-    # host pattern: <tenant>.<subdomain>.myworkdayjobs.com
-    return f"{tenant['tenant']}.{tenant['subdomain']}.myworkdayjobs.com"
+def _host(t):
+    # allow separate host vs path tenant.
+    # fallback: if 'host' not provided, use 'tenant' (old behavior)
+    host_name = t.get("host") or t["tenant"]
+    return f"{host_name}.{t['subdomain']}.myworkdayjobs.com"
 
-def _api_url(tenant):
-    # API pattern: https://<tenant>.<subdomain>.myworkdayjobs.com/wday/cxs/<tenant>/<site>/jobs
-    return f"https://{_host(tenant)}/wday/cxs/{tenant['tenant']}/{tenant['site']}/jobs"
+def _path_tenant(t):
+    # path segment after /en-US/, can differ (e.g., Careers, NVIDIAExternalCareerSite)
+    return t.get("path") or t["tenant"]
 
-def _public_root_url(tenant):
-    # Public root used for cookie priming and referer
-    return f"https://{_host(tenant)}/en-US/{tenant['tenant']}"
+def _public_root(t):
+    # most tenants work with this English locale root
+    return f"https://{_host(t)}/en-US/{_path_tenant(t)}"
 
-def _job_url(tenant, external_path):
-    return f"{_public_root_url(tenant)}/job/{external_path}"
+def _search_urls(t):
+    """
+    Return a list of likely search/landing URLs to try in order.
+    Different tenants use different landing paths.
+    """
+    root = _public_root(t)
+    return [
+        root + "/search",
+        root + "/careers",
+        root + "/jobs",
+        root,  # landing itself
+    ]
 
-def _prime_session(tenant, session):
-    # Hit the public site first to receive cookies Workday expects
-    root = _public_root_url(tenant)
-    session.headers.update(HEADERS | {
-        "Origin": f"https://{_host(tenant)}",
-        "Referer": root,
-    })
-    # try a couple of likely paths to set cookies
-    for path in ("", "/jobs", "/careers", "/search"):
+def _extract_jobs_from_html(html):
+    """
+    Workday embeds JSON in one or more <script> tags.
+    We look for a JSON block that contains job listings.
+    """
+    soup = BeautifulSoup(html, "lxml")
+
+    # Strategy 1: big JSON object with 'jobPostings'
+    for s in soup.find_all("script"):
+        txt = (s.string or s.text or "").strip()
+        if not txt or "jobPostings" not in txt and '"jobPostings"' not in txt:
+            continue
+        start, end = txt.find("{"), txt.rfind("}")
+        if start != -1 and end != -1 and end > start:
+            blob = txt[start:end+1]
+            try:
+                data = json.loads(blob)
+                postings = []
+                def walk(x):
+                    nonlocal postings
+                    if isinstance(x, dict):
+                        for k in ("jobPostings", "items", "results"):
+                            v = x.get(k)
+                            if isinstance(v, list) and v:
+                                postings.extend(v)
+                        for v in x.values():
+                            walk(v)
+                    elif isinstance(x, list):
+                        for v in x:
+                            walk(v)
+                walk(data)
+                if postings:
+                    return postings
+            except Exception:
+                pass
+
+    # Strategy 2: fallback heuristic search for objects w/ externalPath
+    m_all = re.findall(r'\{[^<>]+?"externalPath"[^<>]+?\}', html)
+    postings = []
+    for mm in m_all:
         try:
-            r = session.get(root + path, timeout=20)
-            # Some tenants respond non-200 on odd paths; that's fine as long as cookies set
+            postings.append(json.loads(mm))
         except Exception:
-            pass
-
-def _fetch_page(tenant, offset=0, limit=50, session=None):
-    if session is None:
-        session = requests.Session()
-        session.headers.update(HEADERS)
-    body = {"limit": limit, "offset": offset, "appliedFacets": {}, "searchText": ""}
-    r = session.post(_api_url(tenant), json=body, timeout=30)
-    r.raise_for_status()
-    return r.json()
+            continue
+    return postings
 
 def fetch_workday(tenant):
     """
-    tenant dict example:
-      { "subdomain": "wd1", "tenant": "databricks", "site": "External", "company": "Databricks" }
-      { "subdomain": "wd5", "tenant": "nvidia",     "site": "NVIDIAExternalCareerSite", "company": "NVIDIA" }
+    tenant example (new flexible form):
+      { "subdomain": "wd3", "host": "lseg", "path": "Careers", "company": "LSEG" }
+      { "subdomain": "wd3", "host": "relx", "path": "relx", "company": "RELX" }
+      { "subdomain": "wd5", "host": "nvidia", "path": "NVIDIAExternalCareerSite", "company": "NVIDIA" }
+
+    Backward compatible with:
+      { "subdomain": "wd5", "tenant": "nvidia", "company": "NVIDIA" }
     """
-    out = []
-    offset, limit = 0, 50
-    session = requests.Session()
-    _prime_session(tenant, session)  # set cookies + Origin/Referer/User-Agent
+    sess = requests.Session()
+    sess.headers.update(UA)
 
-    tries = 0
-    while True:
-        tries += 1
+    html = None
+    for url in _search_urls(tenant):
         try:
-            data = _fetch_page(tenant, offset=offset, limit=limit, session=session)
-        except requests.HTTPError as e:
-            # Handle 406/403 by re-priming once and retrying
-            if e.response is not None and e.response.status_code in (403, 406) and tries <= 2:
-                time.sleep(1.0)
-                _prime_session(tenant, session)
-                data = _fetch_page(tenant, offset=offset, limit=limit, session=session)
-            else:
-                raise
+            r = sess.get(url, timeout=25)
+            if r.status_code in (200, 204) and r.text:
+                html = r.text
+                break
         except Exception:
-            # brief backoff and one retry for network hiccups
-            if tries <= 2:
-                time.sleep(1.0)
-                continue
-            raise
+            pass
+        time.sleep(0.2)
 
-        jobs = data.get("jobPostings", []) or data.get("items", [])
-        if not jobs:
-            break
+    if not html:
+        # last attempt: plain root
+        try:
+            r = sess.get(_public_root(tenant), timeout=25)
+            if r.status_code in (200, 204) and r.text:
+                html = r.text
+        except Exception:
+            pass
 
-        company = tenant.get("company") or tenant["tenant"]
-        for j in jobs:
-            title = j.get("title") or j.get("titleLocalized") or ""
-            loc = ", ".join([l.get("formattedName","") for l in j.get("locations", [])]) \
-                  or (j.get("locationsText","") or "")
-            external_path = j.get("externalPath","")
-            job_url = _job_url(tenant, external_path) if external_path else _public_root_url(tenant)
-            desc = strip_html(j.get("bulletFields","")) if isinstance(j.get("bulletFields",""), str) else ""
-            updated = j.get("postedOn") or j.get("startDate") or j.get("timeUpdated") \
-                      or datetime.datetime.utcnow().isoformat()
-            remote = "remote" in (f"{title} {desc} {loc}".lower())
+    if not html:
+        return []
 
+    raw_posts = _extract_jobs_from_html(html)
+    out = []
+    company = tenant.get("company") or (tenant.get("host") or tenant.get("tenant"))
+
+    for j in raw_posts:
+        title = (j.get("title") or j.get("titleLocalized") or j.get("displayJobTitle") or "").strip()
+
+        # location
+        loc = ""
+        if isinstance(j.get("locations"), list):
+            loc = ", ".join([x.get("formattedName","") or x.get("name","") for x in j["locations"]])
+        loc = loc or j.get("locationsText","") or j.get("location","") or ""
+
+        # url
+        ext = j.get("externalPath") or j.get("externalPathKey") or j.get("canonicalPositionUrl") or ""
+        if ext.startswith("/"):
+            ext = ext[1:]
+        job_url = f"{_public_root(tenant)}/job/{ext}" if ext else _public_root(tenant)
+
+        # description (often short in embedded JSON)
+        desc = j.get("externalPostingDescription") or j.get("jobPostingInfo",{}).get("jobDescription","") or ""
+        desc = strip_html(desc)
+
+        posted = j.get("postedOn") or j.get("startDate") or j.get("timeUpdated") or j.get("updatedAt") \
+                 or datetime.datetime.utcnow().isoformat()
+        remote = "remote" in f"{title} {loc} {desc}".lower()
+
+        if title and job_url:
             out.append({
                 "id": stable_id(job_url, title, company),
                 "title": title,
@@ -102,11 +150,8 @@ def fetch_workday(tenant):
                 "location": loc,
                 "remote": remote,
                 "url": job_url,
-                "posted_at": updated,
+                "posted_at": posted,
                 "description": desc,
                 "source": "workday",
             })
-
-        offset += limit
-        time.sleep(0.4)  # polite rate limit
     return out
