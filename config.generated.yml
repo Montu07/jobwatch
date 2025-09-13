@@ -1,0 +1,83 @@
+sources:
+  greenhouse_orgs: []
+  lever_orgs: []
+  ashby_orgs: []
+  workday_tenants: []
+  smartrec_companies:
+    - metaplatformsinc
+    - ibmcorporation
+    - expediainc
+    - appleinc
+    - compunnelsoftwaregroupinc
+    - googlellc
+    - caremarkllc
+    - fordmotorcompany
+    - aetnaresourcesllc
+    - ciscosystemsinc
+    - teslainc
+    - americanexpresstravelrelatedservicescompanyinc
+    - asanainc
+    - netflixinc
+    - tiktokinc
+    - nikeinc
+    - dropboxinc
+    - mastercardinternationalincorporated
+    - paypalinc
+    - indeedinc
+    - citiustechinc
+    - daticsinc
+    - elilillyandcompany
+    - cotivitiinc
+    - autodeskinc
+    - citizensfinancialgroupinc
+    - hudsonrivertradingllc
+    - stitchfixinc
+    - servicenowinc
+    - overjetinc
+    - theguardianlifeinsurancecompanyofamerica
+    - epitecinc
+    - cognixiallc
+    - lyftinc
+    - analyticpartnerslp
+    - lightbeamhealthsolutionsinc
+    - carfaxinc
+    - leidosinc
+    - charlesriverlaboratoriesinc
+    - upgradeinc
+    - safewayinc
+    - northwesternmutuallifeinsurancecompany
+    - amazoncomservicesllc
+    - godaddycomllc
+    - nerdwalletinc
+    - metapaymentsincformerlyknownasfacebookpaymentsinc
+    - qualtricsllc
+    - workdayinc
+    - medidatasolutionsinc
+    - synchronybank
+    - redbullnorthamericainc
+    - sonyinteractiveentertainmentllc
+    - toyotaresearchinstituteinc
+    - doordashinc
+    - microntechnologyinc
+    - liverampinc
+    - anthropicpbc
+    - publicstorage
+    - plaidinc
+    - visausainc
+    - deltadentalofcalifornia
+    - abbvieinc
+    - thechildrenshospitalofphiladelphia
+    - johnsonandjohnsonservicesinc
+    - medtronicinc
+    - deltaairlinesinc
+    - zooxinc
+    # ... you can continue with the rest of the cleaned list
+
+filters:
+  include_keywords: []
+  exclude_keywords: []
+  locations: []
+
+notify:
+  telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"
+  telegram_chat_id: "${TELEGRAM_CHAT_ID}"

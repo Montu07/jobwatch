@@ -1,0 +1,80 @@
+# config.normal.yml
+filters:
+  keywords_any:
+    - "data engineer"
+    - "analytics engineer"
+    - "data scientist"
+    - "machine learning engineer"
+    - "ml engineer"
+    - "mlops"
+    - "gen ai"
+    - "llm"
+    - "ai engineer"
+  must_have_any:
+    - "python"
+    - "sql"
+  exclude_if_title:
+    - "director"
+    - "vp"
+    - "manager"
+    - "principal"
+    - "executive assistant"
+    - "recruiter"
+    - "talent"
+    - "marketing"
+    - "sales"
+    - "hr"
+    - "product marketing"
+    - "communications"
+  locations_any:
+    - "united states"
+    - "usa"
+    - "u.s."
+    - "remote - usa"
+    - "us remote"
+  remote_ok: true
+  min_posted_days_ago: 7
+
+sources:
+  greenhouse_orgs:
+    - "airbnb"
+    - "anthropic"
+    - "brex"
+    - "cloudflare"
+    - "databricks"
+    - "datadog"
+    - "discord"
+    - "figma"
+    - "gusto"
+    - "instacart"
+    - "pinterest"
+    - "reddit"
+    - "robinhood"
+    - "roblox"
+    - "scaleai"
+    - "stripe"
+    - "lyft"
+    - "qualtrics"
+  lever_orgs:
+    - "palantir"
+    - "plaid"
+  ashby_orgs:
+    - "openai"
+    - "anthropic"
+    - "datadog"
+    - "figma"
+    - "airtable"
+    - "retool"
+    - "notion"
+    - "ramp"
+  smartrec_companies: []   # keep empty until we confirm real SR tenants
+
+  workday_tenants:         # keep only the ones that truly work for you
+    # fill once confirmed; leave empty for now
+    # - { company: "NVIDIA",  subdomain: "wd5", tenant: "nvidia",       site: "NVIDIAExternalCareerSite" }
+    # - { company: "LSEG",    subdomain: "wd3", tenant: "lseg",         site: "Careers" }
+    # - { company: "RELX",    subdomain: "wd3", tenant: "relx",         site: "relx", locale: "en-US" }
+
+notify:
+  telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"
+  telegram_chat_id: "${TELEGRAM_CHAT_ID}"

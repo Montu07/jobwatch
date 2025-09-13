@@ -1,136 +1,302 @@
-# ===== JobWatch Config (US-only, 7 days, sponsorship-aware) =====
+# ===== JobWatch Config (GH + Lever active; Workday=3 tenants; SR & Ashby disabled) =====
 
-# ---- Matching filters ----
-keywords_any:
+# --- Filtering (edit to your taste) ---
+include_titles:
   - "data engineer"
-  - "data engineering"
   - "analytics engineer"
-  - "data analyst"
-  - "data scientist"
   - "machine learning engineer"
   - "ml engineer"
   - "mlops"
-  - "gen ai"
-  - "generative ai"
-  - "llm"
+  - "data scientist"
+  - "research engineer"
   - "ai engineer"
-  # sponsorship signals
-  - "visa sponsorship"
-  - "h1b"
-  - "work authorization"
-  - "sponsor"
-  - "opt"
-  - "cpt"
+  - "gen ai"
+  - "llm"
+  - "data"
+  - "analyst"
+  - "data analyst"
+  - "SD"
+  - "Ai"
 
-must_have_any:
-  - "python"
-  - "sql"
-
-exclude_if_title:
+exclude_titles:
+  - "intern"
+  - "internship"
+  - "contract"
+  - "contractor"
+  - "temporary"
   - "director"
-  - "vp"
-  - "manager"
   - "principal"
-  - "executive assistant"
-  - "recruiter"
-  - "talent"
-  - "marketing"
+  - "vp"
+  - "svp"
+  - "head of"
+  - "staff"        # remove if you want Staff-level
+  - "manager"      # remove if you want manager roles
   - "sales"
-  - "hr"
-  - "design"
+  - "marketing"
+  - "support"
+  - "bdr"
+  - "business development"
   - "product marketing"
   - "communications"
 
-# US-only (extra safety; code already detects state abbreviations)
-locations_any:
+# optional keyword passes (applied to title + description)
+keywords_any:
+  - "python"
+  - "sql"
+  - "spark"
+  - "airflow"
+  - "dbt"
+  - "kafka"
+  - "aws"
+  - "gcp"
+  - "azure"
+
+# Location filters
+include_locations:
   - "united states"
   - "usa"
   - "u.s."
   - "remote - usa"
+  - "remote, us"
   - "us remote"
 
-# Optional: reduce staffing/consultancy noise by company name substring
-company_deny_any:
-  - "solutions"
-  - "technologies"
-  - "consulting"
-  - "staffing"
-  - "talent"
-  - "tek"
-  - "hexaware"
-  - "mastech"
-  - "insight global"
-  - "ascendion"
-  - "collabera"
-  - "tata consultancy"
-  - "infosys"
-  - "wipro"
-  - "hcl"
+exclude_locations:
+  - "india"
+  - "europe"
+  - "united kingdom"
+  - "uk"
+  - "australia"
+  - "canada"    # remove if you're open to Canada
 
 remote_ok: true
-min_posted_days_ago: 7   # 7-day window
+min_posted_days_ago: 10  # only alert if posted/updated within the last N days
 
-companies_priority:
-  - "databricks"
-  - "snowflake"
-  - "nvidia"
-  - "microsoft"
-  - "google"
-  - "meta"
-  - "amazon"
-  - "stripe"
-  - "openai"
-  - "anthropic"
-  - "huggingface"
-  - "scaleai"
-  - "palantir"
-  - "datadog"
-  - "uber"
-  - "lyft"
-
-# ---- Sources to poll ----
+# --- Sources ---
 sources:
-  # Greenhouse (confirmed by your discover step)
   greenhouse_orgs:
-    - "lyft"
-    - "qualtrics"
-
-  # SmartRecruiters (from your discover step)
-  smartrec_companies:
-    - "apple"
-    - "cisco"
-    - "expedia"
-    - "google"
-    - "ibm"
-    - "meta"
-    - "paypal"
-    - "tesla"
-
-  # Ashby (safe to keep; may be 0 if they moved ATS)
-  ashby_orgs:
+    # Core you already had
+    - "airbnb"
     - "anthropic"
-    - "openai"
+    - "asana"
+    - "brex"
+    - "cloudflare"
+    - "databricks"
     - "datadog"
+    - "discord"
+    - "dropbox"
     - "figma"
-    - "notion"
+    - "gusto"
+    - "indeed"
+    - "instacart"
+    - "lyft"
+    - "overjet"
+    - "pinterest"
+    - "qualtrics"
+    - "reddit"
+    - "robinhood"
+    - "roblox"
+    - "scaleai"
+    - "stitchfix"
+    - "stripe"
+    - "upgrade"
+    # Added earlier
+    - "carvana"
+    - "signifyhealth"
+    # Big Tech & Enterprise (from your last batches)
+    - "block"
+    - "elastic"
+    - "hashicorp"
+    - "mongodb"
+    - "okta"
+    - "twilio"
+    - "zoominfo"
+    # Aerospace/Defense
+    - "spacex"
 
-  # Workday (split into subdomain/host/path parts)
+  lever_orgs:
+    - "analyticpartners"
+    - "atlassian"
+    - "kpmg"
+    - "netflix"
+    - "palantir"
+    - "plaid"
+    - "zoox"
+
+  # Ashby disabled for now (kept here for quick re-enable)
+  ashby_orgs: []
+
+  # SmartRecruiters disabled for now (full lists preserved below as comments)
+  smartrec_companies: []
+
+  # Workday tenants (ACTIVE)
   workday_tenants:
-    - company: "NVIDIA"
-      subdomain: "wd5"
-      host: "nvidia"
-      path: "NVIDIAExternalCareerSite"
-    - company: "RELX"
-      subdomain: "wd3"
-      host: "relx"
-      path: "relx"
-    - company: "LSEG"
-      subdomain: "wd3"
-      host: "lseg"
-      path: "Careers"
+    - { subdomain: "wd103", host: "accenture", path: "AccentureCareers", company: "Accenture" }
+    - { subdomain: "wd5",   host: "nvidia",    path: "NVIDIAExternalCareerSite", company: "Nvidia" }
+    - { subdomain: "wd1",   host: "dell",      path: "DellCareers", company: "Dell" }
 
-# ---- Notifiers (env-driven) ----
+# --- Notifications ---
 notify:
   telegram_bot_token: "${TELEGRAM_BOT_TOKEN}"
   telegram_chat_id: "${TELEGRAM_CHAT_ID}"
   slack_webhook_url: "${SLACK_WEBHOOK_URL}"
+
+
+# ----------------------------------------------------------------------------------------
+# HOLDING PEN (DISABLED): SmartRecruiters company lists preserved for later re-enable
+# To re-enable any subset, move them back into smartrec_companies: above.
+# ----------------------------------------------------------------------------------------
+# smartrec_companies:
+#   # --- IT & Consulting ---
+#   - "accenture"
+#   - "birlasoft"
+#   - "capgemini"
+#   - "cognizant"
+#   - "cyient"
+#   - "deloitte"
+#   - "ey"
+#   - "genpact"
+#   - "globallogic"
+#   - "harmaninternational"
+#   - "hcltechnologies"
+#   - "hexawaretechnologies"
+#   - "hitachiconsulting"
+#   - "infosys"
+#   - "lttechnologyservices"
+#   - "mindtree"
+#   - "mphasis"
+#   - "niittechnologies"
+#   - "nttdata"
+#   - "persistentsystems"
+#   - "pwc"
+#   - "sonatasoftware"
+#   - "syntel"
+#   - "tataconsultancyservices"
+#   - "techmahindra"
+#   - "ustglobal"
+#   - "valuelabs"
+#   - "virtusa"
+#   - "wipro"
+#   - "zsassociates"
+#   # --- Healthcare & Pharma ---
+#   - "abbvie"
+#   - "amgen"
+#   - "astrazeneca"
+#   - "biogen"
+#   - "bristolmyerssquibb"
+#   - "elililly"
+#   - "genentech"
+#   - "gilead"
+#   - "johnsonjohnsonservices"
+#   - "merck"
+#   - "moderna"
+#   - "novartis"
+#   - "pfizer"
+#   - "regeneron"
+#   - "roche"
+#   - "takeda"
+#   - "vertexpharmaceuticals"
+#   # --- Finance & Payments ---
+#   - "americanexpress"
+#   - "bankofamerica"
+#   - "capitalone"
+#   - "charlesschwab"
+#   - "citigroup"
+#   - "goldmansachs"
+#   - "jpmorgan"
+#   - "mastercard"
+#   - "morganstanley"
+#   - "paypal"
+#   - "visausa"
+#   - "wellsfargo"
+#   # --- Banks/Insurance/Others ---
+#   - "truistbank"
+#   - "paychexnorthamerica"
+#   - "americanfamilymutualinsurancecompany"
+#   - "thepncfinancialservicesgroup"
+#   - "farmersgroup"
+#   - "libertymutualtechnologygroup"
+#   - "stonexgroup"
+#   - "graingercorporateservices"
+#   - "americanspecialtyhealthincorporated"
+#   - "munichreamericaservices"
+#   - "deltadentalinsurancecompany"
+#   - "guardianlifeinsurancecompanyofamerica"
+#   # --- Retail/Media/Storage ---
+#   - "2kgames"
+#   - "cubesmart"
+#   - "foxnewsnetwork"
+#   - "freedomroadscampingworldgoodsam"
+#   - "kelloggbusinessservicescompany"
+#   - "nextracker"
+#   - "pilottravelcenters"
+#   - "thehabitrestaurants"
+#   - "wyndhamvacationownership"
+#   # --- Hospitals/Universities/Providers ---
+#   - "brighamandwomenshospital"
+#   - "mountsinaihospitalmedicalcenterofchicago"
+#   - "universityofnotredame"
+#   - "vanderbiltuniversity"
+#   - "universityofpittsburgh"
+#   - "corewellhealth"
+#   - "somatus"
+#   - "carecentrix"
+#   - "sanford"
+#   - "ascensionhealthalliance"
+#   - "ascensionhealthis"
+#   # --- Big Tech & Enterprise ---
+#   - "adobe"
+#   - "amd"
+#   - "arm"
+#   - "broadcom"
+#   - "crowdstrike"
+#   - "intel"
+#   - "intuit"
+#   - "microsoft"
+#   - "nvidia"
+#   - "oracle"
+#   - "qualcomm"
+#   - "salesforce"
+#   - "sap"
+#   - "servicetitan"
+#   - "shopify"
+#   - "snowflake"
+#   - "zoom"
+#   # --- Airlines & Defense ---
+#   - "airbus"
+#   - "alaskaairlines"
+#   - "americanairlines"
+#   - "blueorigin"
+#   - "boeing"
+#   - "frontierairlines"
+#   - "generaldynamics"
+#   - "jetblue"
+#   - "l3harris"
+#   - "lockheedmartin"
+#   - "northropgrumman"
+#   - "raytheontechnologies"
+#   - "rocketlabusa"
+#   - "southwestairlines"
+#   - "spiritairlines"
+#   - "unitedairlines"
+#   - "virgingalactic"
+#   # --- Energy & Utilities ---
+#   - "bp"
+#   - "chevron"
+#   - "conocophillips"
+#   - "dominionenergy"
+#   - "dukeenergy"
+#   - "entergy"
+#   - "eversourceenergy"
+#   - "exelon"
+#   - "exxonmobil"
+#   - "firstenergy"
+#   - "marathonpetroleum"
+#   - "nationalgrid"
+#   - "nexteraenergy"
+#   - "pacificgasandelectric"
+#   - "phillips66"
+#   - "sempraenergy"
+#   - "shellusa"
+#   - "southerncompany"
+#   - "valeroenergy"
+#   - "xcelenergy"

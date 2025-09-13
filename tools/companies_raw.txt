@@ -1,0 +1,1621 @@
+Meta Platforms INC	210
+Ibm Corporation	73
+Vista Applied Solutions Group INC	33
+Expedia INC	31
+Apple INC	30
+Compunnel Software Group INC	29
+Google LLC	29
+Latentview Analytics Corporation	26
+Caremark LLC	21
+Cvs Shared Services Resources LLC	20
+Sage IT INC	19
+Ford Motor Company	18
+Aetna Resources LLC	17
+Cisco Systems INC	17
+Tekinvaderz LLC	16
+Ascendion INC Formerly Known As Collabera INC	14
+Ciphernine INC	14
+Tesla INC	14
+American Express Travel Related Services Company INC	13
+Itstac LLC	13
+Infostretch Corporation	12
+Rj Systems INC	12
+Cloudwick Technologies INC	12
+Populus Group LLC	12
+Kingston Technologies INC	12
+Eficens Systems INC	11
+Infinite Computer Solutions INC	11
+Insight Global LLC	11
+Dfs Corporate Services LLC	11
+Asana INC	11
+Dataeconomy INC	11
+Purpose Financial INC	10
+Cloudserve Solutions LLC	10
+Livemindz Services INC	10
+Bitwise INC	10
+Datasenseit LLC	10
+Citiustech INC	10
+Costco Wholesale Corporation	10
+Ven Solutions LLC	10
+Tror LLC	10
+Mankind America LLC	10
+Cyma Systems INC	9
+Tiktok INC	9
+Limelightlogic INC	9
+Motivity Labs INC	8
+Xoriant Corporation	8
+Nube9 LLC	8
+Rite Pros INC	8
+Netflix INC	8
+Nestor Technologies INC	8
+Analytics9 Solutions INC	8
+Algebrait LLC	8
+Toyota Motor Credit Corporation Tmcc	8
+Psquare Technologies LLC	8
+Zions Bancorporation Na	8
+Visam Technologies INC	8
+Thinklusive INC	8
+Snowstack LLC	7
+Amalgam Technologies INC	7
+Amgen INC	7
+New Math Data LLC	7
+Donato Technologies INC	7
+Antra INC	7
+Artificial Inventions LLC	7
+Nike INC	7
+Ace American Insurance Company	7
+Insurance Services Office INC	7
+Sonata Software North America INC	7
+Strategic Systems INC	7
+Bytedance INC	7
+Barclays Services CORP	7
+Optum Services INC	7
+Iflex INC	7
+Health Catalyst INC	7
+Moxie IT Solutions INC	7
+Denken Solutions INC	7
+V Soft Consulting Group INC	7
+Dropbox INC	6
+Itvorks INC	6
+Experis Us LLC	6
+Nectar Info Tek LLC	6
+O3 Technology Solutions LLC	6
+Squad Software INC	6
+Sysconsult LLC	6
+Hiteck Solutions INC	6
+Syrencloud INC	6
+Onix Networking CORP	6
+Gomiapp LLC	6
+Think Logic Systems INC	6
+Cognitech Technologies INC	6
+Mastercard International Incorporated	6
+California Creative Solutions INC	6
+Risamsoft INC	6
+Dataformix Technologiesinc	6
+Allagi Technologies INC	6
+Precision Technologies CORP	6
+Infotech Prism LLC	6
+AI Randomtrees LLC	5
+Whip Systems LLC	5
+Cdi Solutions INC
+ [9/9/25, 14:27:30] Abhi: 5
+Nexturn INC	5
+Shrive Solutions LLC	5
+Dataquad INC	5
+Neo Prism Solutions LLC	5
+Takeo Tech LLC	5
+Tsmc Technology INC	5
+Ifusion INC	5
+Majestic IT Services INC	5
+Relanto INC	5
+Pike Solutions INC	5
+Paypal INC	5
+Smartdw INC	5
+Resource Integrators LLC	5
+Elite IT Technologies LLC	5
+Slesha INC	5
+Euniverse Technologies LLC	5
+Ibrain Technologies INC	5
+Acetech Group Corporation	5
+Nextcoder IT Solutions INC	5
+Coforge Limited	5
+Skill Voice INC	5
+Enrich Technology INC	5
+Innova Solutions INC	5
+Beaconfire Staffing Solutions INC	5
+Info Keys INC	5
+Nimbusaitech LLC	5
+Tek Leaders INC	5
+Mirage Software INC Dba Bourntec Solutions	5
+Grainger Corporate Services LLC	5
+IT Premia Group INC	4
+Indeed INC	4
+Idwteam LLC	4
+Saipsit INC	4
+Cloudbridge Solutions INC	4
+Collaborate Solutions INC	4
+Technipros LLC	4
+Agilisium Consulting LLC	4
+Hyatt Corporation	4
+Nucor Business Technology INC	4
+A Squared Businesses and Consulting	4
+Ivorsource LLC	4
+Mastech Digital Technologies INC	4
+Corporate Solutions General INC	4
+Bluecloud Services INC	4
+Datics INC	4
+Mellow Soft INC	4
+Vertex Analytics INC	4
+Geneses Tech Solutions LLC	4
+Beaconbold INC	4
+Usdot Networks INC	4
+Eli Lilly and Company	4
+Prophecy Consulting INC	4
+Ebsoft Consulting INC	4
+Zeus Solutions INC	4
+Ledgerhub INC	4
+Tricubic INC	4
+Leverage Technologies INC	4
+Nivid Infotech INC	4
+Isolve Technology INC	4
+Technumen INC	4
+Ams Tec Solutions LLC	4
+Htms INC	4
+Nb Alpha Omega LLC	4
+Keystone Technology Partners INC	4
+Tekshapers INC	4
+Quebec Solutions INC	4
+Barclays Services LLC	4
+Xpert Technologies INC	4
+Intellilink Technologies INC	4
+Cloudflare INC	4
+Techfield LLC	4
+Paccar INC	4
+Adroit Innovative Solutions INC	4
+Vak IT Systems INC	4
+Advithri Technologies LLC	4
+Inspyr Solutions LLC	4
+Pamten INC	4
+Thought Byte INC	4
+Minisoft Technologies LLC	4
+Apptad INC	4
+Lead IT Corporation	4
+Optimal Technologies INC	4
+Galaxy I Technologies INC	3
+Nxp USA INC	3
+Blue Fusion Enterprise Technologies INC	3
+Axzora Resourcing LLC	3
+Pi Square Technologies LLC	3
+Citizens Financial Group INC	3
+Ananta Tech Solutions	3
+Contrive Solutions INC	3
+Autodesk INC	3
+Arcane Systems INC	3
+Ccc Intelligent Solutions INC	3
+Syntegra Global Consulting INC	3
+Tech Talent Connect LLC	3
+Channel Solutions LLC	3
+Altair Technologies INC	3
+Cotiviti INC	3
+Meta Soft INC
+ [9/9/25, 14:27:47] Abhi: 3
+Centraprise CORP	3
+Kp IT Solutions LLC	3
+Block INC	3
+Unified Tech Group INC	3
+Brainhr IT Solutions Incorporation	3
+Visionet Systems INC	3
+University of Pittsburgh	3
+Itarks INC	3
+R2 Technologies Corporation	3
+Reenar IT INC	3
+Excelon Solution LLC	3
+Computer Power Group INC	3
+Rackera INC	3
+Vspastra Solutions LLC	3
+Sunray Systems INC	3
+AI Labs Web LLC	3
+Rising Tides Solutions LLC	3
+Decision Minds INC	3
+Aceintegrator INC	3
+Palayekar Companies INC	3
+Ionic Technologies LLC	3
+Spurcroft INC	3
+Horizon IT INC	3
+Imr Soft LLC	3
+Keypixel Software Solutions LLC	3
+Lakshya Technologies INC	3
+Cyberbridge International INC Dba Creospan INC	3
+Beacon Hill Staffing Group LLC	3
+Sasinfo INC	3
+Kalpra Tech Solutions LLC	3
+Midland Guardian CO	3
+Arohak INC	3
+California Softtech INC	3
+Wi Tronix LLC	3
+Noblesoft Solutions INC	3
+Vitosha INC	3
+Techstar Consulting INC	3
+Benecias LLC	3
+Intrado Life & Safety INC	3
+Aircallio INC	3
+Notion Labs INC	3
+Bintech Group LLC	3
+Dataflake LLC	3
+Uprise Technologies INC	3
+Millionitsquare LLC	3
+Time Dyanmics INC	3
+Hs Technologies LLC	3
+Fidelity Technology Group LLC Dba Fidelity Investments	3
+Hindsight Software Solutions INC	3
+Aplos America INC	3
+Nxp USA INC	3
+Blue Fusion Enterprise Technologies INC	3
+Galaxy I Technologies INC	3
+Axzora Resourcing LLC	3
+Pi Square Technologies LLC	3
+Ananta Tech Solutions	3
+Autodesk INC	3
+Contrive Solutions INC	3
+Citizens Financial Group INC	3
+Channel Solutions LLC	3
+Ccc Intelligent Solutions INC	3
+Arcane Systems INC	3
+Syntegra Global Consulting INC	3
+Tech Talent Connect LLC	3
+Altair Technologies INC	3
+Lasai Technologies LLC	3
+Wb Solutions LLC	3
+Cotiviti INC	3
+Sophlogic Global LLC	3
+Applet Systems LLC	3
+Meta Soft INC	3
+Berkley Insurance Company	3
+Ar Infotek Solutions LLC	3
+Quantum Technologies LLC	3
+Garden State IT Solutions INC	3
+Psolv LLC	3
+Pageone Systems INC	3
+Radixlink INC	2
+American Unit INC	2
+Cloudkarma INC	2
+Koyetech LLC	2
+Icloud Consulting Services INC	2
+Solware IT Technologies LLC	2
+Saminavi LLC	2
+Applab Systems INC	2
+Bayview Asset Management LLC	2
+Beautech Power Systems LLC	2
+Solugenix Corporation	2
+Beacon Hill Solutions Group LLC	2
+Futurety LLC	2
+Edgeall INC	2
+Py Data Solutions INC	2
+Hudson River Trading LLC	2
+Maven Wave Partners LLC	2
+Techscience Info LLC	2
+Ivish Networks LLC	2
+Hippo Employee Services INC	2
+Gentis Solutions LLC	2
+Cincinnati Childrens Hospital Medical Center
+ [9/9/25, 14:28:03] Abhi: 2
+Flightsafety International INC	2
+Radiantze INC	2
+A 1 Consulting INC	2
+Cloud Destinations INC	2
+Costrategix LTD	2
+Pozent Corporation	2
+Alpha Net Consulting LLC	2
+Rxadvance Corporation	2
+Datassay INC	2
+IT Face INC	2
+Applied Value Technologies INC	2
+Metiz Technologies LLC	2
+Wise Equation Solutions INC	2
+Munich Re America Services INC	2
+Cloud Centric INC	2
+Usg INC	2
+Deltanova AI Solutions LLC	2
+Vrn Technologies LLC	2
+Paramount Global Solutions INC	2
+3i Infotech INC	2
+Clover Health Labs LLC	2
+Destin IT Solutions INC	2
+Royal Monarch Solutions LLC	2
+Shayaan Corporation INC	2
+Vensoft INC	2
+Leap IT INC	2
+Stellus Rx LLC	2
+Cquent Systems INC	2
+Intelligroup USA LTD	2
+Sapphire IT Services INC	2
+Variyas Global Solutions INC	2
+American Family Mutual Insurance Company Si	2
+Dynamed Solutions LLC	2
+Spfm Lp	2
+Dish Network LLC	2
+Career Soft Solutions INC	2
+Msr Technology Group LLC	2
+American IT Solutions INC	2
+American Specialty Health Incorporated	2
+Inmar INC	2
+Mcsquared AI LLC	2
+Lavsun Technologies INC	2
+Share Point INC	2
+Cloud Nine Tek LLC	2
+Techbridge Partners LLC	2
+Pulse Network LLC	2
+Techpro Solutions INC	2
+Lowes Companies INC	2
+Truist Bank	2
+Info Services LLC	2
+Paychex North America INC	2
+Adisols LLC	2
+Tia Infotek INC	2
+Crux Informatics INC	2
+IT Gateway LLC	2
+Blueridge Dynamic Solutions LLC	2
+Stitch Fix INC	2
+Avanti Corporation	2
+General Motors Financial Company INC	2
+Sk Soft Systems LLC	2
+Teksystems INC	2
+Kian Global IT Solutions LLC	2
+Rwaltz Software Services Group INC	2
+Artech Business Systems INC	2
+Euclid Innovations INC	2
+Anschutz Entertainment Group INC	2
+Futuretech Consultants LLC	2
+Firstnet Global LLC	2
+Avm Consulting INC	2
+Genai Training.Com LLC	2
+American Tech Vision Solutions LLC	2
+Inforight Solutions LLC	2
+Itcaps LLC	2
+Atlassian Us INC	2
+Imanage LLC	2
+Spark Cloud INC	2
+Summit IT Experts INC	2
+Cogent Cube LLC	2
+Datalore Technologies INC	2
+Nc Health Affiliates LLC	2
+9dots Technology INC	2
+Facetec INC	2
+Mitchellmartin INC	2
+Abm Industries Incorporated	2
+Hexaware Technologies INC	2
+Advanced Resource Staffing INC	2
+Rhombus Technologies INC	2
+Tanishsoft LLC	2
+Stonex Group INC	2
+Trinity Infotech INC	2
+Servicenow INC	2
+Information Technology and Management Consulting INC	2
+Planet AI Inventions LLC	2
+Thrivesoftware Solutions INC	2
+Kenfill Techno Solutions LLC	2
+Tecshaper INC	2
+Damian Consulting INC	2
+Spark Info Solutions INC	2
+Overjet INC
+ [9/9/25, 14:28:19] Abhi: 2
+Gid Investment Advisers LLC	2
+Tap Innovations LLC	2
+I Brain Solutions LLC	2
+Site Iq LLC	2
+Bayone Solutions INC	2
+Mindsprint INC	2
+Prn IT CORP	2
+Arthur J Gallagher Service Company LLC	2
+Sann IT Solutions INC	2
+Concentrix Cvg Customer Management Group INC	2
+Decision Six INC	2
+Scanbuy INC	2
+Coherent Tech INC	2
+Technofix IT Solutions LLC	2
+Karwell Technologiies INC	2
+Afficiency INC	2
+Cordel Technology INC	2
+Hive Soft Solutions LLC	2
+Nam Info INC	2
+Jps Tech Solutions LLC	2
+Nexify Infosystems LLC	2
+Dvg Tech Solutions LLC	2
+Spark Info Solutions INC	2
+Pyramid Consulting INC	2
+Rhombus Power INC	2
+Planet AI Inventions LLC	2
+Tecshaper INC	2
+Kenfill Techno Solutions LLC	2
+Thrivesoftware Solutions INC	2
+Overjet INC	2
+Tanishsoft LLC	2
+Servicenow INC	2
+Damian Consulting INC	2
+Information Technology and Management Consulting INC	2
+Mitchellmartin INC	2
+Facetec INC	2
+Abm Industries Incorporated	2
+Stonex Group INC	2
+Rhombus Technologies INC	2
+Advanced Resource Staffing INC	2
+Hexaware Technologies INC	2
+Trinity Infotech INC	2
+Nc Health Affiliates LLC	2
+9dots Technology INC	2
+Datalore Technologies INC	2
+Summit IT Experts INC	2
+Cogent Cube LLC	2
+Imanage LLC	2
+Atlassian Us INC	2
+Spark Cloud INC	2
+Itcaps LLC	2
+Genai Training.Com LLC	2
+Firstnet Global LLC	2
+Avm Consulting INC	2
+Inforight Solutions LLC	2
+American Tech Vision Solutions LLC	2
+Apex Informatics LLC	2
+Syrainfotek LLC	2
+Blend360 LLC	2
+Bean Infosystems LLC	2
+Ford Motor Credit Company LLC	2
+Aptiv Us Services General Partnership	2
+Qcentrio Technologies LLC	2
+Tek Excel INC	2
+Tanvi IT Solutions INC	2
+Skyovi LLC	2
+Spreee INC	2
+Tec Frames LLC	2
+Rootshell Enterprise Technologies INC	2
+Nxt IT LLC	2
+Viacore Technologies INC	2
+Redsun Solutions LLC	2
+The Guardian Life Insurance Company of America	2
+Datametrics Technologies LLC	2
+Epitec INC	2
+Cognixia LLC	2
+Cloudspace LLC	2
+Long Finch Technologies LLC	2
+Synersys Technologies INC	2
+Aus Merchant Services INC	2
+Suv Solutions INC	2
+Interpro INC	2
+Vtrix Technologies INC	2
+Ultimate Fitness Group Dba Orangetheory Fitness	2
+Primesoft INC	2
+Tek International INC	2
+Vokertech INC	2
+Techvorks LLC	2
+Talent Clustr LLC	2
+Ashley Tech Solutions INC	2
+Hap Capital Advisors LLC	2
+Randstad Digital LLC	2
+Ams IT Solutions LLC	2
+Amazon.Com Services LLC	2
+Staffbee Solutions INC	2
+Corewell Health	2
+Quantiphi INC	2
+Relynk IT INC	2
+Environmental Systems Research Institute INC Esri
+ [9/9/25, 14:28:51] Abhi: Employer Name	H1B LCA Filings Count
+Gsk Solutions INC	2
+Biosales	2
+Sentry Insurance A Mutual Company	2
+Insurance Masters LLC	2
+Ez4 Technologies LLC	2
+Bryan Medical Center	2
+Godaddy.Com LLC	2
+Solutionsoft INC	2
+Tupl INC	2
+Anvil Solutions INC	2
+Color Employer LLC	1
+Owens & Minor Medical INC	1
+Datapower LLC	1
+Midwest Motor Supply CO	1
+Nexinfo Solutions INC	1
+Exeliq Consulting INC	1
+Servicetitan INC	1
+Tektra IT Services INC	1
+Lord Abbett & CO LLC	1
+Narwal INC	1
+Aci Infotech INC	1
+Mysapgroup INC	1
+Infozeal Solutions INC	1
+Rocket LLC	1
+Etek IT Services INC	1
+Solar Service Experts LLC	1
+Prana Life Sciences LLC	1
+I5 Tech INC	1
+Techzon INC	1
+Nerdwallet INC	1
+Lorvish Technologies INC	1
+Digipulse Technologies INC	1
+Consol Energy INC	1
+Protechnions LLC	1
+Conglomerateit LLC	1
+Delphic Software Solutions INC	1
+Cloudinfrait INC	1
+Vbj Tech LLC	1
+Vidha IT Solutions LLC	1
+Origintek Solutions LLC	1
+Chen Tech LLC	1
+Gravitas Tech LLC	1
+Insight Intelli INC	1
+Leapfrog Power INC	1
+Tekservs Cons LTD CO	1
+Ardor IT Solutions INC	1
+Upen Group INC	1
+Blue Sprig Pediatrics INC	1
+Nextracker LLC	1
+Optimus Unit LLC	1
+Sain Technologies LLC	1
+Bentley Systems Incorporated	1
+Concor IT Solutions INC	1
+National Consulting Group INC	1
+Cognisoft Technologies LLC	1
+Tti INC	1
+Nordic Consulting Partners INC	1
+Csi Solutions LLC	1
+Meta Payments INC Formerly Known As Facebook Payments INC	1
+Indra Solutions LLC	1
+Naten LLC	1
+Dynpro INC	1
+Tresume LLC	1
+Viewsoft INC	1
+Algorizin INC	1
+Deckers Outdoor Corporation	1
+Hanabi AI INC	1
+J Goldman & CO Lp	1
+Safeway INC	1
+Liberty Mutual Technology Group INC	1
+Upgrade INC	1
+Think Analytix LLC	1
+Akraya INC	1
+Veolia North America LLC	1
+Teamsuccess LLC Dba Hied Success	1
+Findica INC	1
+Charles River Laboratories INC	1
+Vantage Bank Texas	1
+Sriven Info INC	1
+Vantageerp LLC	1
+Northwestern Mutual Life Insurance Company	1
+Pi Labs INC	1
+Hrgi Holdings INC	1
+The Pnc Financial Services Group INC	1
+Electric Power Engineers LLC	1
+Optimized Investment Holdings INC	1
+Rjt Compuquest INC Dba Apolis	1
+Sanctityinternational LLC	1
+Mavensoft Solutions INC	1
+Pro IT INC	1
+Bullwhip Technologies LLC	1
+Gcom Software LLC	1
+Algobrainz LLC	1
+Mindboard INC	1
+Avansa IT Solutions LLC	1
+Energy Advisors Group INC	1
+Verde Tech Systems INC	1
+Gorbel INC	1
+Swift Technologies INC	1
+Enewvision LLC
+ [9/9/25, 14:29:24] Abhi: Employer Name	H1B LCA Filings Count
+Sriven Systems INC	2
+Savi Technologies INC	2
+Accelyst LLC	2
+Aspire Systems Digital Transformation INC	2
+Sapphire Software Solutions INC	2
+Unisoft Technology INC	2
+Praise Consulting LLC	2
+Sr Systems LLC	2
+Ruha Technologies INC	2
+Collectivehealth INC	2
+Object Experts LLC	2
+Nile Tech INC	2
+Advanced Knowledge Tech LLC	2
+Rva Ed LLC	2
+Snipp Interactive INC	2
+Fetch Rewards LLC	2
+Ellkay LLC	2
+Advanceinnovative LLC	2
+Vsion Technologies INC	2
+Aadva LLC	2
+Prorsum Technologies INC	2
+Triotek IT INC	2
+Niktor IT INC	2
+Xebia USA INC	2
+Exoduspoint Capital Management Lp	2
+Nixon Technologies LLC	2
+Byte Link Systems INC	2
+Aariya Tech INC	2
+Pioneer Tek Services INC	2
+Mouri Tech LLC	2
+University of Maryland Medical System Corporation	2
+Qtech Consulting Group INC	2
+Autoliv Asp INC	2
+Orabase Solutions LLC	2
+Kgate Technologies INC	2
+Meijer Great Lakes Limited Partnership	2
+Cibc Bank USA	2
+Vertisystem INC	2
+Aicloudhub INC	2
+Collabera LLC	2
+Sln Solutions LLC	2
+Peer Consulting Resources INC	2
+Bawak IT Consultant Group LLC	2
+Informatik Data Solutions INC	2
+Mastro Services INC	2
+Paylocity Corporation	2
+Itmiracle Corporation	2
+Varant INC	2
+Aristos Tek	2
+Ispero LLC	2
+Lyft INC	2
+Itc Infotech USA INC	2
+Analytic Partners Lp	2
+Prodapt North America INC	2
+Godaddy.Com LLC	2
+Solutionsoft INC	2
+Anvil Solutions INC	2
+Tupl INC	2
+Bryan Medical Center	2
+Ez4 Technologies LLC	2
+Insurance Masters LLC	2
+Biosales	2
+Sentry Insurance A Mutual Company	2
+Niche IT Software Solutions LLC	2
+Gsk Solutions INC	2
+The Guardian Life Insurance Company of America	2
+Tanvi IT Solutions INC	2
+Viacore Technologies INC	2
+Nxt IT LLC	2
+Ford Motor Credit Company LLC	2
+Aptiv Us Services General Partnership	2
+Qcentrio Technologies LLC	2
+Bean Infosystems LLC	2
+Redsun Solutions LLC	2
+Tek Excel INC	2
+Rootshell Enterprise Technologies INC	2
+Spreee INC	2
+Tec Frames LLC	2
+Skyovi LLC	2
+Apex Informatics LLC	2
+Blend360 LLC	2
+Syrainfotek LLC	2
+Environmental Systems Research Institute INC Esri	2
+Corewell Health	2
+Quantiphi INC	2
+Relynk IT INC	2
+Adaequare INC	2
+Techquest Solutions LLC	2
+Homesite Group Incorporated	2
+Randstad Digital LLC	2
+Ams IT Solutions LLC	2
+Amazon.Com Services LLC	2
+Staffbee Solutions INC	2
+Primesoft INC	2
+Interpro INC	2
+Ultimate Fitness Group Dba Orangetheory Fitness	2
+Ashley Tech Solutions INC	2
+Hap Capital Advisors LLC	2
+Vtrix Technologies INC	2
+Tek International INC
+ [9/9/25, 14:29:44] Abhi: Employer Name	H1B LCA Filings Count
+Hrgi Holdings INC	1
+Charles River Laboratories INC	1
+Sanctityinternational LLC	1
+Teamsuccess LLC Dba Hied Success	1
+Findica INC	1
+Vantage Bank Texas	1
+Algobrainz LLC	1
+Vantageerp LLC	1
+Mindboard INC	1
+Pro IT INC	1
+Bullwhip Technologies LLC	1
+Gcom Software LLC	1
+Mavensoft Solutions INC	1
+Rjt Compuquest INC Dba Apolis	1
+Swift Technologies INC	1
+Verde Tech Systems INC	1
+Gorbel INC	1
+Avansa IT Solutions LLC	1
+Energy Advisors Group INC	1
+Lightbeam Health Solutions INC	1
+Foundry Digital LLC	1
+Carfax INC	1
+Ashatek LLC	1
+Verana Health INC	1
+Samurai Infotech LLC	1
+Ram Software Solutions INC	1
+Bitsolutionsus LLC	1
+Tekcog INC	1
+Deemsys INC	1
+Eyvatek LLC	1
+Datanormus LLC	1
+Eab Global INC	1
+Qubitfy LLC	1
+Offerpad Holdings LLC	1
+Leidos INC	1
+Wizard Tech Solutions INC	1
+Ace Financials Technology LLC	1
+Jones Lang Lasalle Americas INC	1
+Ojus LLC	1
+Lorven Techno Solutions LLC	1
+Menzo Technologies CORP	1
+Tech Info Services INC	1
+Assistrx LLC	1
+Cloutics Coders INC	1
+Eia Technologies INC	1
+Tabner INC	1
+Cloud IT Tec INC	1
+Signature IT Solutions INC	1
+Shoolin INC	1
+Next Generation Technology INC	1
+Microinfo INC	1
+Pulsepoint INC	1
+University of Notre Dame Du Lac	1
+Paralel Technologies LLC	1
+Dlr Group INC	1
+Softtechers LLC	1
+Novateur Technologies INC	1
+2k Games INC	1
+Talents R Us LLC	1
+Tech Genie Services LLC	1
+Covetrus INC	1
+Bns International INC	1
+Arrant Technologies LLC	1
+Data Cloud Tek LLC	1
+Estuate INC	1
+Syntech Soft INC	1
+Kuiper Opco LLC	1
+Sagarsoft INC	1
+Smart Energy Systems INC	1
+Milliman INC	1
+Infolance INC	1
+Planet Equity Group	1
+Opplane INC	1
+Prime Software Technologies INC	1
+Excelon Solutions INC	1
+Gss Infotech Ct INC	1
+Cloudscape LLC	1
+Hsquare IT Solutions INC	1
+Ado Staffing INC	1
+Vasantas Software INC	1
+Ruan Transport Corporation	1
+Wyndham Vacation Ownership INC	1
+Candex Solutions INC	1
+Citadel Americas Services LLC	1
+Wave Solutions INC	1
+Linkwell Solutions INC	1
+Workday INC	1
+Medidata Solutions INC	1
+Ilogic Tek LLC	1
+Excelon Solutions LLC	1
+Synchrony Bank	1
+Attencity LLC	1
+Ameriteam Services LLC	1
+Intelliswift Software INC	1
+Smg Hunter LLC	1
+Source Consulting LLC	1
+Techlance IT INC	1
+Technodrive Business Solutions INC	1
+Prabhav Services INC	1
+Encora Digital LLC
+ [9/9/25, 14:30:05] Abhi: Employer Name	H1B LCA Filings Count
+Brigham and Womens Hospital	1
+Cloudmellow Consulting LTD CO	1
+David Yurman Enterprises LLC	1
+Finthrive INC	1
+The Emerson Group	1
+Zillion Technologies INC	1
+Springml INC	1
+Glenysys Technologies INC	1
+Sony Interactive Entertainment LLC	1
+Red Bull North America INC	1
+Competitive Computer Information Technologies INC	1
+Keerthan IT Solutions INC	1
+Equinox IT Solutions LLC	1
+Fbl Financial Group INC	1
+Ascension Health Alliance	1
+Tekaccel INC	1
+Whitegold Consulting LLC	1
+Panasonic Energy Corporation of North America	1
+Tek4gov INC	1
+The Knowlton Group LLC	1
+Nga Group INC	1
+Fox News Network LLC	1
+Amp Solutions LLC	1
+Savantis Intelli Solutions INC	1
+Yochana IT Solutions INC	1
+Orrba Systems LLC	1
+Popular Tech	1
+Softstandard Solutions LLC	1
+Balyasny Asset Management Lp	1
+Computer Aid INC	1
+Toyota Research Institute INC	1
+Border States Industries INC	1
+Bsd Capital INC	1
+Msquare Technologies INC	1
+Michaels Stores INC	1
+Ki Infosystems LLC	1
+Otterai INC	1
+Iqlogg INC	1
+Hollywood Feed LLC	1
+Cutting Edge Staffing	1
+Proformex LLC	1
+Vidlexinfo LLC	1
+Imetris Corporation	1
+Saxon Global INC	1
+Agile Technologies INC	1
+Entellects Corporation INC	1
+Bizinsights INC	1
+Droisys INC	1
+Skillful Technologies INC	1
+First Fidelity Bank	1
+Lead Intelligence INC	1
+Bizintex INC	1
+Marvelous Technologies INC	1
+Akinfosystem	1
+Freedom Financial Network Funding LLC	1
+Kpi Partners INC	1
+Fuge Technologies INC	1
+Technology Hub INC	1
+CEO Foundry LLC	1
+Elite Exceed LLC	1
+Maven Companies INC	1
+Sanjeev Sharma Dds INC	1
+Zane Solutions LLC	1
+Helishores INC	1
+Asura IT Consulting LLC	1
+Parabola Solutions LLC	1
+Informa Tech LLC	1
+Arta Finance INC	1
+Anuvu Operations LLC	1
+Bmg Rights Management Us LLC	1
+Everest Dx INC	1
+Tek Tree LLC	1
+Rayven IT Solutions LLC	1
+Saishri Soft Solutions LLC	1
+Sanofi Us Services INC	1
+Sag Producers Pension Plan	1
+Spark Tek INC	1
+Pictor Labs INC	1
+Orpine INC	1
+Kestra Financial INC	1
+Troutman Pepper Locke LLP Formerly Troutman Pepper Hamilton Sanders LLP	1
+Alphind Healthcare INC	1
+Octagon IT LLC	1
+Cbs Interactive INC	1
+Mando Technologies INC	1
+Sargent Manufacturing Company	1
+United Fortune IT Solutionsllc	1
+Signify Health LLC	1
+Core Its Limited Liability Company	1
+Techvirtue LLC	1
+Ray Techno Solutions INC	1
+Resideo LLC	1
+Rehabilitation Institute of Chicago	1
+Farmers Group INC	1
+Tampa Electric Company	1
+Agm Infra Solutions INC	1
+Tek Ninjas Solutions LLC	1
+Big Eye Technologies LLC	1
+Kosma Tech INC	1
+Cubesmart Lp	1
+ [9/9/25, 14:30:25] Abhi: Employer Name	H1B LCA Filings Count
+Competitive Computer Information Technologies INC	1
+Johnson & Johnson Services INC	1
+Keerthan IT Solutions INC	1
+David Yurman Enterprises LLC	1
+Cloudmellow Consulting LTD CO	1
+Finthrive INC	1
+Ssatech INC	1
+The Emerson Group	1
+Brigham and Womens Hospital	1
+The Knowlton Group LLC	1
+Glenysys Technologies INC	1
+Conflux Systems INC	1
+Top Edge Technology INC	1
+Dealerdirect LLC	1
+Dataglacier LLC	1
+Phreesia INC	1
+Cloudinfo INC	1
+Avaap USA LLC	1
+Neon IT LLC	1
+Nga Group INC	1
+Otterai INC	1
+Maruthi Technologies INC	1
+Symphony Corporation	1
+Smart IT Frame LLC	1
+Synmeta LLC	1
+Zenspace IT LLC	1
+Popular Tech	1
+Data Analytix LLC	1
+Smart Solutions Technologies Nj LLC	1
+Digitalis INC	1
+Globex IT Solutions INC	1
+Entellects Corporation INC	1
+Droisys INC	1
+Skillful Technologies INC	1
+Bizinsights INC	1
+Cutting Edge Staffing	1
+Proformex LLC	1
+Imetris Corporation	1
+Saxon Global INC	1
+Hollywood Feed LLC	1
+Agile Technologies INC	1
+Iqlogg INC	1
+Bsd Capital INC	1
+Michaels Stores INC	1
+Toyota Research Institute INC	1
+Computer Aid INC	1
+Msquare Technologies INC	1
+Border States Industries INC	1
+Amp Solutions LLC	1
+Ki Infosystems LLC	1
+Balyasny Asset Management Lp	1
+Whitegold Consulting LLC	1
+Panasonic Energy Corporation of North America	1
+Tekaccel INC	1
+Fox News Network LLC	1
+Savantis Intelli Solutions INC	1
+Yochana IT Solutions INC	1
+Fbl Financial Group INC	1
+Ascension Health Alliance	1
+Tek4gov INC	1
+Equinox IT Solutions LLC	1
+Orrba Systems LLC	1
+Sanofi Us Services INC	1
+Vidlexinfo LLC	1
+Rayven IT Solutions LLC	1
+Saishri Soft Solutions LLC	1
+Pictor Labs INC	1
+Sag Producers Pension Plan	1
+Spark Tek INC	1
+Everest Dx INC	1
+Anuvu Operations LLC	1
+Bmg Rights Management Us LLC	1
+Tek Tree LLC	1
+Arta Finance INC	1
+Asura IT Consulting LLC	1
+Helishores INC	1
+Parabola Solutions LLC	1
+Informa Tech LLC	1
+Sanjeev Sharma Dds INC	1
+Zane Solutions LLC	1
+Technology Hub INC	1
+CEO Foundry LLC	1
+Elite Exceed LLC	1
+Maven Companies INC	1
+Freedom Financial Network Funding LLC	1
+Akinfosystem	1
+Kpi Partners INC	1
+Fuge Technologies INC	1
+Lead Intelligence INC	1
+First Fidelity Bank	1
+Marvelous Technologies INC	1
+Bizintex INC	1
+Etekserve INC	1
+Acd International Trade INC	1
+Flexion INC	1
+Vizva Tech Solutions LLC	1
+Lorhan Corporation INC	1
+Select Minds LLC	1
+Gokatech INC	1
+Green Mountain Power Corporation
+ [9/9/25, 14:30:56] Abhi: Employer Name	H1B LCA Filings Count
+Saltchuk Marine Services LLC	1
+The Habit Restaurants LLC	1
+Claims Services Group LLC	1
+Enterprise Applications Consulting LLC	1
+Mount Sinai Hospital Medical Center of Chicago	1
+Zestfinance INC	1
+Xtglobal INC	1
+Total System Services LLC	1
+Biointellisense INC	1
+Resourcesys INC	1
+Srd Infotek INC	1
+Abotts Consulting INC	1
+Digital Scripts INC	1
+Smartworks LLC	1
+Techdive Solutions INC	1
+Itglobal Services LLC	1
+Softworld Technologies LLC	1
+66degrees LLC	1
+Nextphaseai LLC	1
+Forthright Soft INC	1
+Synapse Tech Services INC	1
+Visa USA INC	1
+Adroix CORP	1
+Intellisavvy LLC	1
+Petram Analytics LLC	1
+Neutronit INC	1
+Omny INC	1
+Tis International USA INC	1
+Calibur Integrated Solutions INC	1
+The Stamford Hospital	1
+Horizon International Trd INC	1
+Teknoz Software Solutions LLC	1
+Employer Direct Healthcare LLC	1
+Jm Informations Systems LLC	1
+Slesha Software Solutions INC	1
+Sterling 5 INC	1
+Techvision CO	1
+Skulicity LLC	1
+Louisiana Health Service & Indemnity Company	1
+Dyads Consulting LLC	1
+Epik Solutions	1
+Monogram LLC	1
+Siri Data Analytics LLC	1
+Globalpoint INC	1
+Plaid INC	1
+Mindquest Technology Solutions LLC	1
+Mitaja Corporation	1
+Zf Active Safety Us INC	1
+Iqubetechnologies INC	1
+Resonate Networks INC	1
+Td Bank National Association	1
+Janova Solutions INC	1
+Zirlen Technologies INC	1
+Tailored Shared Services LLC	1
+V Envisage Solutions INC	1
+Logging In.Com LLC	1
+Techie Brains Incorporated	1
+Noveltek Systems INC	1
+Orion Systems Integrators LLC	1
+Leica Microsystems INC	1
+Schupan & Sons INC	1
+Zensoft LLC	1
+Horizon Information Technology Solutions INC	1
+Emergtech Business Solutions INC	1
+Danlaw INC	1
+Mercaso Iq LLC	1
+Rapport IT Services INC	1
+Radian Group INC	1
+Vits Consulting CORP	1
+Brillius Technologies INC	1
+Digital Management LLC	1
+Exact Benefits Group LLC	1
+Doordash INC	1
+Aligned Incentives LLC	1
+Vrpro IT LLC	1
+Datalysys LLC	1
+Micron Technology INC	1
+Facteus INC	1
+Kellogg Business Services Company LLC	1
+Sovereign Technologies LLC	1
+Hexar IT Solutions INC	1
+Provectus IT INC	1
+California Coast Credit Union	1
+3s Business Corporation	1
+Apex Fintech Services LLC	1
+Kjr Sofware Services INC	1
+Telios Corporation	1
+Fortune Brands Innovations Group INC	1
+Neoteksoft INC	1
+Optml INC	1
+Globytes Technology Solutions LLC	1
+Corporate Computer Solutions LLC	1
+Freedomroads LLC Camping World & Good Sam	1
+Perficientcorp INC	1
+Koddi INC	1
+Rbus INC	1
+Sysrs IT Services LLC	1
+Camber Pharmaceuticals INC	1
+Rbc Bank Georgia Na	1
+Encora Technology Group LLC	1
+ [9/9/25, 14:31:10] Abhi: Employer Name	H1B LCA Filings Count
+Vivid Soft Global INC	1
+Vigoursoft Global Solutions LLC	1
+Gd Plus LLC	1
+Ethos Consulting Group LLC	1
+Cyber Space Technologies LLC	1
+Emd Digital INC	1
+Software Technology INC	1
+Delta Dental of California	1
+Success Tech Solutions INC	1
+Pristine Embed Technologies INC	1
+Ss Technologies INC	1
+Aptiva CORP	1
+Baanyan Software Services INC	1
+Superior Construction Company	1
+Data Concepts LLC	1
+Shrive Technologies LLC	1
+Massachusetts Mutual Life Insurance Company	1
+Tekblu LLC	1
+Abbvie INC	1
+The Childrens Hospital of Philadelphia	1
+Elise AI Technologies CORP	1
+Kodak Alaris LLC	1
+Savvyan Technologies LLC	1
+Jb Micro INC	1
+Kriddha Technologies INC	1
+Saltchuk Marine Services LLC	1
+The Habit Restaurants LLC	1
+Claims Services Group LLC	1
+Enterprise Applications Consulting LLC	1
+Manasi Information Technologies INC	1
+Zestfinance INC	1
+Onsolve LLC	1
+Blueribbon Global Technologies LLC	1
+Hana E Solutions INC	1
+Waltz Health INC	1
+Oremda Infotech INC	1
+Effulgent INC	1
+Community Financial System INC	1
+Abotts Consulting INC	1
+Softworld Technologies LLC	1
+Actalent Services LLC	1
+Accent Decor INC	1
+Whoop INC	1
+Smart Prism Solutions INC	1
+Hp INC	1
+The Sugrue Group LLC	1
+Arch International Group INC	1
+Gavs Technologies Na INC	1
+One Network Enterprises INC	1
+Think Big Solutions INC	1
+Tt Technologies INC	1
+Employer Direct Healthcare LLC	1
+Jm Informations Systems LLC	1
+Slesha Software Solutions INC	1
+Petram Analytics LLC	1
+Neutronit INC	1
+Omny INC	1
+Tis International USA INC	1
+Calibur Integrated Solutions INC	1
+The Stamford Hospital	1
+Dyads Consulting LLC	1
+Horizon International Trd INC	1
+Epik Solutions	1
+Monogram LLC	1
+Siri Data Analytics LLC	1
+Skulicity LLC	1
+Globalpoint INC	1
+Digital Scripts INC	1
+Louisiana Health Service & Indemnity Company	1
+Techdive Solutions INC	1
+Itglobal Services LLC	1
+Resonate Networks INC	1
+Tailored Shared Services LLC	1
+66degrees LLC	1
+Mount Sinai Hospital Medical Center of Chicago	1
+Xtglobal INC	1
+Total System Services LLC	1
+Biointellisense INC	1
+Resourcesys INC	1
+Srd Infotek INC	1
+Smartworks LLC	1
+Adroix CORP	1
+Intellisavvy LLC	1
+Nextphaseai LLC	1
+Sterling 5 INC	1
+Forthright Soft INC	1
+Teknoz Software Solutions LLC	1
+Synapse Tech Services INC	1
+Visa USA INC	1
+Techvision CO	1
+Radian Group INC	1
+Vits Consulting CORP	1
+Logging In.Com LLC	1
+Brillius Technologies INC	1
+Emergtech Business Solutions INC	1
+Danlaw INC	1
+Mercaso Iq LLC	1
+Rapport IT Services INC	1
+Exact Benefits Group LLC	1
+Doordash INC	1
+ [9/9/25, 14:31:20] Abhi: Employer Name	H1B LCA Filings Count
+Medtronic INC	1
+Ohio Farmers Insurance Company	1
+International Technology Solutions INC	1
+Dataquest CORP	1
+Native Pet INC	1
+Quest IT Solutions INC	1
+Carvana LLC	1
+Itinduct INC	1
+Triesten Technologies LLC	1
+Proterra Powered LLC Fka Volvo Battery Solutions LLC	1
+Pep Development Services LLC	1
+Jp Technologies LLC	1
+Resolution Life Services Us INC	1
+Soliant Health LLC	1
+Econtenti INC	1
+Thryv INC	1
+Serverless Solutions LLC	1
+American Bureau of Shipping	1
+Nuanza INC	1
+Strategic Staffing Solutions Lc	1
+Nlp Logix LLC	1
+Srini Soft Systems INC	1
+Chicago Public Schools	1
+Starcom Worldwide INC	1
+Virat Solutions INC	1
+Aksor Technologies INC	1
+Cloudify Technologies LLC	1
+Amensys INC	1
+Pioneer IT Systems LLC	1
+Calisto Corporation	1
+Intellivision INC	1
+Maritz Consulting Group INC	1
+Anthropic Pbc	1
+Matrix Analytics Corporation	1
+Upshop LLC	1
+Public Storage	1
+Alphosoft INC	1
+Iqz Systems LLC	1
+Sdh Systems LLC	1
+Egen Solutions LLC	1
+Eclinical Solutions LLC	1
+Liveramp INC	1
+Koddi INC	1
+Rbus INC	1
+Sysrs IT Services LLC	1
+Corporate Computer Solutions LLC	1
+Globytes Technology Solutions LLC	1
+Freedomroads LLC Camping World & Good Sam	1
+Perficientcorp INC	1
+Pattern INC	1
+Synergy Technologies LLC	1
+Camber Pharmaceuticals INC	1
+Rbc Bank Georgia Na	1
+Datalysys LLC	1
+Sovereign Technologies LLC	1
+Facteus INC	1
+Micron Technology INC	1
+Kellogg Business Services Company LLC	1
+Encora Technology Group LLC	1
+Hexar IT Solutions INC	1
+Provectus IT INC	1
+Vrpro IT LLC	1
+Telios Corporation	1
+Fortune Brands Innovations Group INC	1
+Optml INC	1
+Neoteksoft INC	1
+California Coast Credit Union	1
+Apex Fintech Services LLC	1
+3s Business Corporation	1
+Kjr Sofware Services INC	1
+Radian Group INC	1
+Vits Consulting CORP	1
+Brillius Technologies INC	1
+Danlaw INC	1
+Emergtech Business Solutions INC	1
+Mercaso Iq LLC	1
+Rapport IT Services INC	1
+Exact Benefits Group LLC	1
+Doordash INC	1
+Aligned Incentives LLC	1
+Digital Management LLC	1
+Iqubetechnologies INC	1
+V Envisage Solutions INC	1
+Td Bank National Association	1
+Janova Solutions INC	1
+Plaid INC	1
+Mindquest Technology Solutions LLC	1
+Mitaja Corporation	1
+Zf Active Safety Us INC	1
+Leica Microsystems INC	1
+Orion Systems Integrators LLC	1
+Schupan & Sons INC	1
+Zensoft LLC	1
+Horizon Information Technology Solutions INC	1
+Noveltek Systems INC	1
+Zirlen Technologies INC	1
+Techie Brains Incorporated	1
+Employer Direct Healthcare LLC	1
+Jm Informations Systems LLC	1
+Slesha Software Solutions INC	1
+ [9/9/25, 14:31:32] Abhi: Employer Name	H1B LCA Filings Count
+Drfirst.Com INC	1
+Saika Technologies INC	1
+Markit North America INC	1
+Sigma Analytics LLC	1
+Zreya Tech INC	1
+Crowd Software Consulting LLC	1
+Lcenturion LLC	1
+Lumen IT Services LLC	1
+Trilogy Federal LLC	1
+Dime Community Bank	1
+Aimic INC	1
+Better Home & Finance Holding Company	1
+Inmarket Media LLC	1
+Tekleads LLC	1
+Digital Urth INC	1
+Health Gorilla INC	1
+Blackhawk Network INC	1
+Cognitive Data Intelligence LLC	1
+Cnn IT CORP INC	1
+Fashion Nova LLC	1
+Pioneer Global INC	1
+Rightway Healthcare INC	1
+Priority Health	1
+Timoni Tech INC	1
+Stem Solutions LLC	1
+Malla Systems INC	1
+Novalink Solutions LLC	1
+Thinqspot INC	1
+Sinfralogix LLC	1
+Suntechpros INC	1
+Usatech Consulting LLC	1
+Nextogen INC	1
+Meghaz INC	1
+Bot Technologies LLC	1
+Teknocrux LLC	1
+Venture Global Lng INC	1
+E2open LLC	1
+Green Worldwide Shipping LLC	1
+Wellsky Corporation	1
+Lenovo Global Technology United States INC	1
+Rh Technologies INC	1
+Robotics Technologies LLC	1
+Sm Advan Technology INC	1
+Redica Systems INC	1
+Sp Tech Resources INC	1
+Point72 Private Investments LLC	1
+Astir Technologies LLC	1
+Ashpra Technologies LLC	1
+Pella Corporation	1
+Newagez Technologies LLC	1
+Pinacle IT CORP LLC	1
+Lirio INC	1
+Devu Solutions LLC	1
+Omv America LLC	1
+Amnet Tech LLC	1
+Techcognize INC	1
+Vanderbilt University	1
+Acd International Trade INC	1
+Archents INC	1
+Kijiji Technology Solutions LLC	1
+Flexion INC	1
+Valiant Tek Group INC	1
+Etekserve INC	1
+Green Mountain Power Corporation	1
+Vizva Tech Solutions LLC	1
+Lorhan Corporation INC	1
+Select Minds LLC	1
+Samru Systems LLC	1
+Tutelary INC	1
+Gokatech INC	1
+Appworks INC	1
+Adroitco INC	1
+Global Information Technology INC	1
+Rit Solutions INC	1
+Harland Clarke CORP	1
+Allison Transmission INC	1
+Lithia Motors Support Services INC	1
+Qualtrics LLC	1
+Cepton Technologies INC	1
+Santcore Technologies INC	1
+Dk Crown Holdings INC	1
+Waferwire LLC	1
+Victoire Systems LLC	1
+Sourceitsolutions INC	1
+Gaps and Bridges INC	1
+Application Development Consultants	1
+Vhl Technologies INC	1
+Forefront Consulting Services	1
+Idetasystems LLC	1
+Nephos Technologies	1
+Headstart Solutions LLC	1
+Sri AI Solutions INC	1
+Advia Credit Union	1
+C2s Technologies INC	1
+Eight Eleven Group LLC	1
+National Railroad Passenger Corporation	1
+Kairos Technologies INC	1
+Guzman Energy LLC	1
+Norfolk Southern Corporation	1
+Conversantit INC	1
+ [9/9/25, 14:31:42] Abhi: Employer Name	H1B LCA Filings Count
+Advia Credit Union	1
+Qualtrics LLC	1
+Cepton Technologies INC	1
+Dk Crown Holdings INC	1
+Waferwire LLC	1
+Gaps and Bridges INC	1
+Victoire Systems LLC	1
+Application Development Consultants	1
+Sourceitsolutions INC	1
+Forefront Consulting Services	1
+Harland Clarke CORP	1
+Allison Transmission INC	1
+Vhl Technologies INC	1
+Lithia Motors Support Services INC	1
+Samru Systems LLC	1
+Santcore Technologies INC	1
+Appworks INC	1
+Adroitco INC	1
+Rit Solutions INC	1
+Global Information Technology INC	1
+Tutelary INC	1
+Southeast Missouri State University	1
+Amrock LLC	1
+Clutch Holdings LLC	1
+Betasharp INC	1
+Lendem Solutions LLC	1
+Stok LLC	1
+Magnit Corporation	1
+Welbe Health LLC	1
+Global Technology and Services INC	1
+Simmons Prepared Foods INC	1
+Navayuga Infotech LLC	1
+Ascension Health Is INC	1
+Profitero INC	1
+Client Focus LLC	1
+Sky Tech Services INC	1
+Tech2i INC	1
+Sloka Technologies INC	1
+Murj INC	1
+The Advizor Group LLC	1
+Social Finance LLC	1
+Novelis INC	1
+Winmax Solutions LLC	1
+Logic Loops LLC	1
+Cyber Wave LLC	1
+University of Louisiana at Lafayette	1
+Elsource INC	1
+Energy Domain LLC	1
+Vmac Solutions INC	1
+Ryan Specialty LLC	1
+N5 Sensors INC	1
+Delta Dental Insurance Company	1
+Statsig INC	1
+IT Crats INC	1
+Binance Systems INC	1
+Carecentrix INC	1
+Colorado Credit Union	1
+Emagia Corporation	1
+Global IT INC	1
+Rocket Mortgage LLC	1
+Basys Processing INC	1
+Tanu Infotech INC	1
+Avant Systems INC	1
+Constellation Energy Generation LLC	1
+Vaxcare LLC	1
+Aligned Marketplace INC	1
+Cloudorama Solutions	1
+Hinge INC	1
+Knouse Foods Cooperative INC	1
+Cleanchoice Energy Shared Services LLC	1
+Nuevosoft LLC	1
+Eidiko Systems Integrators LLC	1
+Communityamerica Credit Union	1
+Pilot Travel Centers LLC	1
+Data Analytics and Creative Solutions LLC	1
+Lake Trust Credit Union	1
+Somatus INC	1
+Pvk Corporation	1
+Turningpoint Global Solutions LLC	1
+Hifibio INC	1
+Niftek INC	1
+Mindgruve Holdings INC	1
+Nortek Air Solutions LLC	1
+Logic Planet INC	1
+Siman Pro INC	1
+Procorp Systems INC	1
+Think IT Technologies INC	1
+Sanford	1
+Caprus IT INC	1
+Zoox INC	1
+Yita LLC	1
+Ikcon Technologies INC	1
+Vailexa Technology	1
+Reliable Software Resources	1
+Disruptive Tech Solutions INC	1
+Applabs Tech Solutions INC	1
+Delta Air Lines INC	1
+Mellowsoft INC	1
+Snrc INC	1
+Emonics LLC	1
+ [9/9/25, 14:31:51] Abhi: Employer Name	H1B LCA Filings Count
+Plaid INC	1
+Mindquest Technology Solutions LLC	1
+Noveltek Systems INC	1
+Schupan & Sons INC	1
+Orion Systems Integrators LLC	1
+Leica Microsystems INC	1
+Zensoft LLC	1
+Horizon Information Technology Solutions INC	1
+Techie Brains Incorporated	1
+Zirlen Technologies INC	1
+Rbus INC	1
+Koddi INC	1
+Sysrs IT Services LLC	1
+Freedomroads LLC Camping World & Good Sam	1
+Globytes Technology Solutions LLC	1
+Perficientcorp INC	1
+Corporate Computer Solutions LLC	1
+Synergy Technologies LLC	1
+Pattern INC	1
+Camber Pharmaceuticals INC	1
+Rbc Bank Georgia Na	1
+Encora Technology Group LLC	1
+Hexar IT Solutions INC	1
+Provectus IT INC	1
+Kellogg Business Services Company LLC	1
+Micron Technology INC	1
+Facteus INC	1
+Datalysys LLC	1
+Sovereign Technologies LLC	1
+Vrpro IT LLC	1
+Neoteksoft INC	1
+Optml INC	1
+Fortune Brands Innovations Group INC	1
+Telios Corporation	1
+Kjr Sofware Services INC	1
+3s Business Corporation	1
+California Coast Credit Union	1
+Apex Fintech Services LLC	1
+Elise AI Technologies CORP	1
+Savvyan Technologies LLC	1
+Kodak Alaris LLC	1
+Claims Services Group LLC	1
+Enterprise Applications Consulting LLC	1
+Saltchuk Marine Services LLC	1
+The Habit Restaurants LLC	1
+Jb Micro INC	1
+Kriddha Technologies INC	1
+Waltz Health INC	1
+Onsolve LLC	1
+Blueribbon Global Technologies LLC	1
+Hana E Solutions INC	1
+Manasi Information Technologies INC	1
+Zestfinance INC	1
+Abotts Consulting INC	1
+Softworld Technologies LLC	1
+Oremda Infotech INC	1
+Effulgent INC	1
+Community Financial System INC	1
+Hp INC	1
+Smart Prism Solutions INC	1
+Actalent Services LLC	1
+Accent Decor INC	1
+Whoop INC	1
+The Sugrue Group LLC	1
+Arch International Group INC	1
+Think Big Solutions INC	1
+Tt Technologies INC	1
+One Network Enterprises INC	1
+Gavs Technologies Na INC	1
+Employer Direct Healthcare LLC	1
+Jm Informations Systems LLC	1
+Slesha Software Solutions INC	1
+The Stamford Hospital	1
+Horizon International Trd INC	1
+Tis International USA INC	1
+Neutronit INC	1
+Calibur Integrated Solutions INC	1
+Omny INC	1
+Petram Analytics LLC	1
+Globalpoint INC	1
+Epik Solutions	1
+Dyads Consulting LLC	1
+Monogram LLC	1
+Siri Data Analytics LLC	1
+Skulicity LLC	1
+66degrees LLC	1
+Louisiana Health Service & Indemnity Company	1
+Resonate Networks INC	1
+Techdive Solutions INC	1
+Itglobal Services LLC	1
+Digital Scripts INC	1
+Resourcesys INC	1
+Tailored Shared Services LLC	1
+Logging In.Com LLC	1
+Xtglobal INC	1
+Total System Services LLC	1
+Mount Sinai Hospital Medical Center of Chicago	1
+Biointellisense INC	1
+Intellisavvy LLC	1
+Adroix CORP	1
+ [9/9/25, 14:31:59] Abhi: Employer Name	H1B LCA Filings Count
+Freedomroads LLC Camping World & Good Sam	1
+Perficientcorp INC	1
+Koddi INC	1
+Rbus INC	1
+Sysrs IT Services LLC	1
+Camber Pharmaceuticals INC	1
+Rbc Bank Georgia Na	1
+Encora Technology Group LLC	1
+Pattern INC	1

@@ -1,4 +1,4 @@
-# main.py (your style + Ashby/Workday + SmartRecruiters added)
+# main.py (Greenhouse + Lever + Ashby + Workday + SmartRecruiters) — hardened
 
 import os
 import yaml
@@ -13,24 +13,24 @@ from sources.greenhouse import fetch_greenhouse
 from sources.lever import fetch_lever
 from sources.ashby import fetch_ashby
 from sources.workday import fetch_workday
-from sources.smartrec import fetch_smartrec  # NEW
+from sources.smartrec import fetch_smartrec
 
 # notify
 from notify.telegram import send_telegram
 
-TELEGRAM_MAX = 3800  # keep under Telegram's ~4096 message limit with some buffer
-
+TELEGRAM_MAX = 3800  # keep under Telegram's ~4096 limit with a buffer
 
 def load_config():
-    with open("config.yml", "r", encoding="utf-8") as f:
+    cfg_path = os.getenv("CONFIG_PATH") or "config.yml"
+    with open(cfg_path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f) or {}
-
 
 def source_fetchers(cfg):
     """Yield (source_key, org_label, jobs_list_or_exception)."""
+    srcs = (cfg.get("sources") or {})
 
     # Greenhouse
-    for org in (cfg.get("sources", {}) or {}).get("greenhouse_orgs", []) or []:
+    for org in (srcs.get("greenhouse_orgs") or []):
         try:
             jobs = fetch_greenhouse(org)
             yield ("greenhouse", org, jobs, None)
@@ -38,7 +38,7 @@ def source_fetchers(cfg):
             yield ("greenhouse", org, [], e)
 
     # Lever
-    for org in (cfg.get("sources", {}) or {}).get("lever_orgs", []) or []:
+    for org in (srcs.get("lever_orgs") or []):
         try:
             jobs = fetch_lever(org)
             yield ("lever", org, jobs, None)
@@ -46,31 +46,31 @@ def source_fetchers(cfg):
             yield ("lever", org, [], e)
 
     # Ashby
-    for org in (cfg.get("sources", {}) or {}).get("ashby_orgs", []) or []:
+    for org in (srcs.get("ashby_orgs") or []):
         try:
             jobs = fetch_ashby(org)
             yield ("ashby", org, jobs, None)
         except Exception as e:
             yield ("ashby", org, [], e)
 
-    # Workday
-    for tenant in (cfg.get("sources", {}) or {}).get("workday_tenants", []) or []:
+    # SmartRecruiters — accept strings or dicts; always pass dict to fetcher
+    for comp in (srcs.get("smartrec_companies") or []):
+        label = comp.get("company") if isinstance(comp, dict) else str(comp)
+        payload = comp if isinstance(comp, dict) else {"company": label}
+        try:
+            jobs = fetch_smartrec(payload)
+            yield ("smartrecruiters", label, jobs, None)
+        except Exception as e:
+            yield ("smartrecruiters", label, [], e)
+
+    # Workday — accept dicts only; label nicely
+    for tenant in (srcs.get("workday_tenants") or []):
+        label = tenant.get("company") or tenant.get("tenant") or tenant.get("host") or "workday"
         try:
             jobs = fetch_workday(tenant)
-            label = tenant.get("company") or tenant.get("tenant") or "workday"
             yield ("workday", label, jobs, None)
         except Exception as e:
-            label = tenant.get("company") or tenant.get("tenant") or "workday"
             yield ("workday", label, [], e)
-
-    # SmartRecruiters (NEW)
-    for slug in (cfg.get("sources", {}) or {}).get("smartrec_companies", []) or []:
-        try:
-            jobs = fetch_smartrec(slug)
-            yield ("smartrecruiters", slug, jobs, None)
-        except Exception as e:
-            yield ("smartrecruiters", slug, [], e)
-
 
 def format_job_line(j):
     loc = j.get("location") or ""
@@ -78,7 +78,6 @@ def format_job_line(j):
     company = j.get("company") or ""
     url = j.get("url") or ""
     return f"• {title} @ {company} — {loc}\n  {url}"
-
 
 def chunk_and_send(bot, chat, header, lines):
     """Send one compact summary; if too long, send in chunks."""
@@ -113,12 +112,12 @@ def chunk_and_send(bot, chat, header, lines):
     if buf:
         send_telegram(bot, chat, "\n".join(buf))
 
-
 def run():
+    print("[main] hardened v2 loaded")  # banner so we know this file is running
     load_dotenv()
     cfg = load_config()
 
-    # env first; if you prefer config.notify, you can add fallback from cfg
+    # env first; fallback to config.notify if present
     bot = os.getenv("TELEGRAM_BOT_TOKEN") or (cfg.get("notify", {}) or {}).get("telegram_bot_token")
     chat = os.getenv("TELEGRAM_CHAT_ID") or (cfg.get("notify", {}) or {}).get("telegram_chat_id")
 
@@ -127,10 +126,9 @@ def run():
 
     conn = get_conn()
     new_items = []
-    fetched_counts = {}   # e.g., {"greenhouse:duolingo": 74}
+    fetched_counts = {}
     errors = []
 
-    # Fetch, filter, insert
     for src, org, jobs, err in source_fetchers(cfg):
         key = f"{src}:{org}"
         if err:
@@ -139,7 +137,19 @@ def run():
             fetched_counts[key] = 0
             continue
 
-        print(f"[debug] {key}: fetched {len(jobs)}")
+        # Type safety + debug
+        if not isinstance(jobs, list):
+            print(f"[warn] {key}: jobs is {type(jobs).__name__}, forcing []")
+            jobs = []
+        type_set = {type(x).__name__ for x in jobs} if jobs else set()
+        print(f"[debug] {key}: fetched {len(jobs)} (types={sorted(type_set)})")
+
+        # Keep only dict items
+        before = len(jobs)
+        jobs = [j for j in jobs if isinstance(j, dict)]
+        if len(jobs) != before:
+            print(f"[debug] {key}: kept {len(jobs)} dict items after filtering")
+
         fetched_counts[key] = len(jobs)
 
         for j in jobs:
@@ -147,20 +157,15 @@ def run():
                 if match_job(j, filters_cfg) and insert_if_new(conn, j):
                     new_items.append(j)
             except Exception as e:
-                # never let one bad post break the run
                 print(f"[warn] filter/insert failed for {key}: {e}")
 
-    # --- Build summary & send heartbeat / results ---
     ts = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     fetched_total = sum(fetched_counts.values())
     header = f"📣 JobWatch @ {ts}\nFetched: {fetched_total} | New matches: {len(new_items)}"
 
-    # Sort new items for readability (title then company)
     new_items.sort(key=lambda x: (x.get("title","").lower(), x.get("company","").lower()))
 
     lines = []
-
-    # Per-source counts
     if fetched_counts:
         lines.append("🗂 Sources:")
         for k, v in sorted(fetched_counts.items()):
@@ -168,7 +173,6 @@ def run():
     else:
         lines.append("🗂 Sources: none")
 
-    # New jobs list (trim to 25 to keep message short)
     if new_items:
         lines.append("")
         lines.append(f"🔥 New matching jobs ({min(len(new_items),25)} shown):")
@@ -180,18 +184,15 @@ def run():
         lines.append("")
         lines.append("✅ No new matching jobs this run.")
 
-    # Errors, if any
     if errors:
         lines.append("")
         lines.append("⚠ Errors:")
         lines.extend(errors)
 
-    # Console print (helps during dev)
     print(header)
     for line in lines:
         print(line)
 
-    # Telegram (single compact summary; chunk if needed)
     chunk_and_send(bot, chat, header, lines)
 
 

@@ -1,0 +1,5 @@
+# config.debug.yml
+# copy of config.normal.yml but ONLY change this line:
+filters:
+  min_posted_days_ago: 60
+# keep the rest identical to normal
